@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jianying-ai-service"
+version = "0.1.0"
+description = "Local, auditable Jianying draft service shared by HTTP and MCP"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "fastapi==0.143.3",
+  "uvicorn==0.37.0",
+  "mcp==2.3.0",
+  "pydantic==2.14.0",
+  "pyJianYingDraft==0.3.1",
+  "uiautomation==2.0.29",
+]
+
+[project.optional-dependencies]
+store-ocr = [
+  "rapidocr_onnxruntime==1.4.4",
+  "Pillow==13.0.0",
+]
+test = [
+  "httpx==0.28.1",
+  "pytest==9.1.1",
+]
+
+[project.scripts]
+jianying-ai = "jianying_service.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/jianying_service"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

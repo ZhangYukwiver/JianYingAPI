@@ -1,0 +1,72 @@
+# Local environments, caches, and build output
+.venv/
+venv/
+.uv-cache/
+__pycache__/
+*.py[cod]
+.pytest*/
+.mypy_cache/
+.ruff_cache/
+.coverage*
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Runtime state and local investigation output
+/runtime*/
+/.runtime*/
+/tmp*/
+/.investigation/
+*.log
+*.tmp
+*.bak
+@AutomationLog.txt
+
+# Credentials and machine-specific editor/client configuration
+.env
+.env.*
+!.env.example
+.credentials/
+credentials*.json
+secrets*.json
+*.pem
+*.key
+*.p12
+*.pfx
+.vscode/
+.idea/
+/mcp*.json
+
+# Only these generic, text-only samples are publishable
+/samples/*
+!/samples/example-project.json
+!/samples/example.srt
+
+# Never publish actual Jianying drafts or private media
+draft_content.json
+draft_meta_info.json
+root_meta_info.json
+.owned
+.jianying_ai_owned.json
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.avi
+*.m4v
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.flac
+*.ogg
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# Operating system files
+Thumbs.db
+Desktop.ini
+.DS_Store
