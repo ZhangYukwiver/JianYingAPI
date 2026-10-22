@@ -6,6 +6,8 @@
 
 DeepSeek 等模型可通过外部客户端调用这些接口。本仓库不内置 DeepSeek 推理后端、不需要模型 API Key，也不自动配置任何 AI 客户端。
 
+不想装 Python，或者要写 Mac 版剪映的草稿箱：[`node/`](node/README.md) 里有工程编辑、草稿生成和写草稿箱的 Node 移植版，纯 Node、不需要 ffprobe，Windows 和 Mac 都能用（不含 HTTP/MCP 服务和界面操作）。
+
 > 当前属于实验性实现，未覆盖剪映全部功能。草稿文件生成和索引写入已有自动测试；剪映 11.6 中完整打开、回放和编辑的兼容性仍需人工验证。写入返回的 `jianying_ui_verified: false` 表示尚未完成界面验收，不能视作视频制作成功。
 
 ## 功能与边界

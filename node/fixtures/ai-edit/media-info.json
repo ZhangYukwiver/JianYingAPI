@@ -1,0 +1,138 @@
+{
+  "clip-720p.mp4": {
+    "kind": "video",
+    "duration_us": 3000000,
+    "width": 1280,
+    "height": 720,
+    "audio": true,
+    "video": true
+  },
+  "clip-portrait.mov": {
+    "kind": "video",
+    "duration_us": 2000000,
+    "width": 720,
+    "height": 1280,
+    "audio": false,
+    "video": true
+  },
+  "clip.avi": {
+    "kind": "video",
+    "duration_us": 2000000,
+    "width": 320,
+    "height": 240,
+    "audio": false,
+    "video": true
+  },
+  "clip.m4v": {
+    "kind": "video",
+    "duration_us": 2000000,
+    "width": 640,
+    "height": 480,
+    "audio": true,
+    "video": true
+  },
+  "clip.mkv": {
+    "kind": "video",
+    "duration_us": 2508000,
+    "width": 480,
+    "height": 270,
+    "audio": true,
+    "video": true
+  },
+  "clip.webm": {
+    "kind": "video",
+    "duration_us": 1508000,
+    "width": 640,
+    "height": 360,
+    "audio": true,
+    "video": true
+  },
+  "fragmented.mp4": {
+    "kind": "video",
+    "duration_us": 2066666,
+    "width": 540,
+    "height": 960,
+    "audio": true,
+    "video": true
+  },
+  "hevc.mp4": {
+    "kind": "video",
+    "duration_us": 2000000,
+    "width": 576,
+    "height": 1024,
+    "audio": true,
+    "video": true
+  },
+  "still.jpg": {
+    "kind": "image",
+    "duration_us": 86400000000,
+    "width": 1920,
+    "height": 1080,
+    "audio": false,
+    "video": true
+  },
+  "still.png": {
+    "kind": "image",
+    "duration_us": 86400000000,
+    "width": 800,
+    "height": 600,
+    "audio": false,
+    "video": true
+  },
+  "still.webp": {
+    "kind": "image",
+    "duration_us": 86400000000,
+    "width": 512,
+    "height": 512,
+    "audio": false,
+    "video": true
+  },
+  "tone.aac": {
+    "kind": "audio",
+    "duration_us": 2729781,
+    "width": null,
+    "height": null,
+    "audio": true,
+    "video": false
+  },
+  "tone.flac": {
+    "kind": "audio",
+    "duration_us": 1800000,
+    "width": null,
+    "height": null,
+    "audio": true,
+    "video": false
+  },
+  "tone.m4a": {
+    "kind": "audio",
+    "duration_us": 2200000,
+    "width": null,
+    "height": null,
+    "audio": true,
+    "video": false
+  },
+  "tone.mp3": {
+    "kind": "audio",
+    "duration_us": 3500000,
+    "width": null,
+    "height": null,
+    "audio": true,
+    "video": false
+  },
+  "tone.ogg": {
+    "kind": "audio",
+    "duration_us": 3106500,
+    "width": null,
+    "height": null,
+    "audio": true,
+    "video": false
+  },
+  "tone.wav": {
+    "kind": "audio",
+    "duration_us": 4000000,
+    "width": null,
+    "height": null,
+    "audio": true,
+    "video": false
+  }
+}

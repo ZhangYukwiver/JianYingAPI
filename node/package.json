@@ -1,0 +1,17 @@
+{
+  "name": "jianying-draft-node",
+  "version": "0.1.0",
+  "private": true,
+  "description": "JianYingAPI 工程编辑、草稿生成与草稿箱写入的 Node 移植版（不需要 Python 和 ffprobe）",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^4.0.18"
+  }
+}

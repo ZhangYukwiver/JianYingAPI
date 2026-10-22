@@ -1,0 +1,735 @@
+{
+ "alac.m4a": {
+  "kind": "audio",
+  "duration_us": 1700000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "alaw.wav": {
+  "kind": "audio",
+  "duration_us": 1300000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "anim.webp": {
+  "kind": "image",
+  "duration_us": 86400000000,
+  "width": 64,
+  "height": 48,
+  "audio": false,
+  "video": true
+ },
+ "audio-only.avi": {
+  "error": "MEDIA_KIND_MISMATCH"
+ },
+ "audioonly.mkv": {
+  "error": "MEDIA_KIND_MISMATCH"
+ },
+ "bext.wav": {
+  "kind": "audio",
+  "duration_us": 1300000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "brand.mp4": {
+  "kind": "video",
+  "duration_us": 2320000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "cbr-noxing.mp3": {
+  "kind": "audio",
+  "duration_us": 5329000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "chapters.m4a": {
+  "kind": "audio",
+  "duration_us": 2000000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "chapters.mp4": {
+  "kind": "video",
+  "duration_us": 2000000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "clusters.mkv": {
+  "kind": "video",
+  "duration_us": 2023000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "cmaf.mp4": {
+  "kind": "video",
+  "duration_us": 2440000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "cover.m4a": {
+  "error": "MEDIA_KIND_MISMATCH"
+ },
+ "cover.mp3": {
+  "error": "MEDIA_KIND_MISMATCH"
+ },
+ "delayed-all.mov": {
+  "kind": "video",
+  "duration_us": 1625397,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "delayed-audio.mp4": {
+  "kind": "video",
+  "duration_us": 2000000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "delaymoov.mp4": {
+  "kind": "video",
+  "duration_us": 2023219,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "ext.wav": {
+  "kind": "audio",
+  "duration_us": 300000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "f32.wav": {
+  "kind": "audio",
+  "duration_us": 650000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "frag-audio.m4a": {
+  "kind": "audio",
+  "duration_us": 2323220,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "gif-as.jpg": {
+  "kind": "image",
+  "duration_us": 86400000000,
+  "width": 332,
+  "height": 222,
+  "audio": false,
+  "video": true
+ },
+ "h264aac.mkv": {
+  "kind": "video",
+  "duration_us": 2223000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "hevc-noedit.mp4": {
+  "kind": "video",
+  "duration_us": 2400000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "hevc.mov": {
+  "kind": "video",
+  "duration_us": 2000000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "hi.flac": {
+  "kind": "audio",
+  "duration_us": 300000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "id3.aac": {
+  "kind": "audio",
+  "duration_us": 2593508,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "ima.wav": {
+  "kind": "audio",
+  "duration_us": 1300000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "jpg-as.png": {
+  "kind": "image",
+  "duration_us": 86400000000,
+  "width": 332,
+  "height": 222,
+  "audio": false,
+  "video": true
+ },
+ "layer2.mp3": {
+  "kind": "audio",
+  "duration_us": 2612125,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "listinfo.wav": {
+  "kind": "audio",
+  "duration_us": 1300000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "live.webm": {
+  "error": "MEDIA_INVALID"
+ },
+ "livemkv.mkv": {
+  "error": "MEDIA_INVALID"
+ },
+ "long.aac": {
+  "kind": "audio",
+  "duration_us": 8012209,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "longaudio.avi": {
+  "kind": "video",
+  "duration_us": 520000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "longaudio.mp4": {
+  "kind": "video",
+  "duration_us": 3000000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "longopus.ogg": {
+  "kind": "audio",
+  "duration_us": 9506500,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "longsub.mp4": {
+  "kind": "video",
+  "duration_us": 4500000,
+  "width": 128,
+  "height": 72,
+  "audio": false,
+  "video": true
+ },
+ "longvorbis.ogg": {
+  "kind": "audio",
+  "duration_us": 9504000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "lossless.webp": {
+  "kind": "image",
+  "duration_us": 86400000000,
+  "width": 210,
+  "height": 160,
+  "audio": false,
+  "video": true
+ },
+ "minute.mp4": {
+  "kind": "video",
+  "duration_us": 61000000,
+  "width": 64,
+  "height": 36,
+  "audio": false,
+  "video": true
+ },
+ "mono.ogg": {
+  "kind": "audio",
+  "duration_us": 1306500,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "mono22k.mp3": {
+  "kind": "audio",
+  "duration_us": 4099999,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "mp3-48k.mp3": {
+  "kind": "audio",
+  "duration_us": 2600000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "mp3-8k-noxing.mp3": {
+  "kind": "audio",
+  "duration_us": 2808000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "mp3inmp4.mp4": {
+  "kind": "video",
+  "duration_us": 2000000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "mpeg25.mp3": {
+  "kind": "audio",
+  "duration_us": 3300000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "mpeg4mp3.avi": {
+  "kind": "video",
+  "duration_us": 2440000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "mpeg4pcm.avi": {
+  "kind": "video",
+  "duration_us": 1400000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "msadpcm.wav": {
+  "kind": "audio",
+  "duration_us": 1300000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "mulaw.wav": {
+  "kind": "audio",
+  "duration_us": 1300000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "multi-frag.mp4": {
+  "kind": "video",
+  "duration_us": 3280000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "negcts.mp4": {
+  "kind": "video",
+  "duration_us": 2323220,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "negoffset.mov": {
+  "kind": "video",
+  "duration_us": 2000000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "nocover.m4a": {
+  "kind": "audio",
+  "duration_us": 2000000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "nocover.mp3": {
+  "kind": "audio",
+  "duration_us": 2700000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "noedit.mp4": {
+  "kind": "video",
+  "duration_us": 2400000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "ntsc.mov": {
+  "kind": "video",
+  "duration_us": 2202200,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "oggflac.ogg": {
+  "kind": "audio",
+  "duration_us": 1300000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "p16.png": {
+  "kind": "image",
+  "duration_us": 86400000000,
+  "width": 96,
+  "height": 64,
+  "audio": false,
+  "video": true
+ },
+ "pal.png": {
+  "kind": "image",
+  "duration_us": 86400000000,
+  "width": 96,
+  "height": 64,
+  "audio": false,
+  "video": true
+ },
+ "pcm.mov": {
+  "kind": "video",
+  "duration_us": 1200000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "piped.flac": {
+  "error": "MEDIA_INVALID"
+ },
+ "plain.mov": {
+  "kind": "video",
+  "duration_us": 2320000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "prog.jpg": {
+  "kind": "image",
+  "duration_us": 86400000000,
+  "width": 332,
+  "height": 222,
+  "audio": false,
+  "video": true
+ },
+ "prores.mov": {
+  "kind": "video",
+  "duration_us": 400000,
+  "width": 64,
+  "height": 36,
+  "audio": true,
+  "video": true
+ },
+ "rf64.wav": {
+  "kind": "audio",
+  "duration_us": 1300000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "rotated.mp4": {
+  "kind": "video",
+  "duration_us": 2000000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "s24.wav": {
+  "kind": "audio",
+  "duration_us": 650000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "seek.mov": {
+  "kind": "video",
+  "duration_us": 2520000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "sepmoof.mp4": {
+  "kind": "video",
+  "duration_us": 2400000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "sidx-frag.mp4": {
+  "kind": "video",
+  "duration_us": 3360000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "sub.mkv": {
+  "kind": "video",
+  "duration_us": 9500000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "tagged.mp3": {
+  "kind": "audio",
+  "duration_us": 3300000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "tmcd.mov": {
+  "kind": "video",
+  "duration_us": 2000000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "trimcopy-hevc.mov": {
+  "kind": "video",
+  "duration_us": 1260000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "trimcopy.mp4": {
+  "kind": "video",
+  "duration_us": 1620000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "trun-default-size-huge.mp4": {
+  "error": "MEDIA_INVALID"
+ },
+ "trun-default-size-ok.mp4": {
+  "kind": "video",
+  "duration_us": 33333333,
+  "width": 540,
+  "height": 960,
+  "audio": true,
+  "video": true
+ },
+ "trun-empty-then.mp4": {
+  "kind": "video",
+  "duration_us": 666667,
+  "width": 540,
+  "height": 960,
+  "audio": true,
+  "video": true
+ },
+ "trun-no-tfhd.mp4": {
+  "error": "MEDIA_INVALID"
+ },
+ "trun-per-entry-nosize.mp4": {
+  "error": "MEDIA_INVALID"
+ },
+ "trun-per-entry-ok.mp4": {
+  "kind": "video",
+  "duration_us": 656901,
+  "width": 540,
+  "height": 960,
+  "audio": true,
+  "video": true
+ },
+ "trun-per-entry-short.mp4": {
+  "error": "MEDIA_INVALID"
+ },
+ "trun-tfhd-zero.mp4": {
+  "error": "MEDIA_INVALID"
+ },
+ "trun-zero-size-huge.mp4": {
+  "error": "MEDIA_INVALID"
+ },
+ "truncated-faststart.mp4": {
+  "kind": "video",
+  "duration_us": 3000000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "truncated-moovend.mp4": {
+  "error": "MEDIA_INVALID"
+ },
+ "truncated.ogg": {
+  "kind": "audio",
+  "duration_us": 1000000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "truncated.wav": {
+  "kind": "audio",
+  "duration_us": 1198000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "tsoffset.mp4": {
+  "kind": "video",
+  "duration_us": 2023219,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "twoaudio-long.mp4": {
+  "kind": "video",
+  "duration_us": 3700000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "u8.wav": {
+  "kind": "audio",
+  "duration_us": 1250000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "v24.mp3": {
+  "kind": "audio",
+  "duration_us": 2600000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "vbr-noxing.mp3": {
+  "kind": "audio",
+  "duration_us": 4192249,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "vbr.mp3": {
+  "kind": "audio",
+  "duration_us": 5300000,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "vbrmp3.avi": {
+  "kind": "video",
+  "duration_us": 2440000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "vfr.mp4": {
+  "kind": "video",
+  "duration_us": 2000000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ },
+ "video-only.m4a": {
+  "error": "MEDIA_KIND_MISMATCH"
+ },
+ "vorbis.ogg": {
+  "kind": "audio",
+  "duration_us": 2101406,
+  "width": null,
+  "height": null,
+  "audio": true,
+  "video": false
+ },
+ "vp8vorbis.webm": {
+  "kind": "video",
+  "duration_us": 1924000,
+  "width": 176,
+  "height": 144,
+  "audio": true,
+  "video": true
+ },
+ "vp9.webm": {
+  "kind": "video",
+  "duration_us": 2320000,
+  "width": 128,
+  "height": 72,
+  "audio": true,
+  "video": true
+ }
+}
