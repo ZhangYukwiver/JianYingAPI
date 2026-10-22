@@ -6,3 +6,5 @@
 *.json text eol=lf
 *.srt text eol=lf
 *.ps1 text eol=crlf
+# Node port fixtures are compared byte for byte; never convert line endings
+node/fixtures/** -text

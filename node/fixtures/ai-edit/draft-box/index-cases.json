@@ -1,0 +1,358 @@
+{
+  "layout": {
+    "dirs": [
+      "drafts/Alpha",
+      "drafts/Beta",
+      "drafts/Gamma",
+      "drafts/Hidden",
+      "drafts/CloudTemp",
+      "drafts/MsTime",
+      "drafts/IsoSpace",
+      "drafts/IsoZulu",
+      "drafts/IsoFraction",
+      "drafts/IsoBad",
+      "drafts/FloatValues",
+      "drafts/WrongRoot",
+      "drafts/NumberRoot",
+      "drafts/NoRoot",
+      "drafts/Unicode 草稿",
+      "drafts/Casefold",
+      "drafts/Nested/Inner",
+      "outside/OutDraft",
+      "index"
+    ],
+    "files": {
+      "drafts/Alpha/draft_content.json": "{}",
+      "drafts/Alpha/draft_meta_info.json": "{}",
+      "drafts/Beta/draft_meta_info.json": "{}",
+      "drafts/Unicode 草稿/draft_info.json": "{}",
+      "drafts/NotADir": "plain file"
+    },
+    "symlinks": {
+      "drafts/Linked": "../outside/OutDraft"
+    }
+  },
+  "index": {
+    "root_path": "${BASE}/index",
+    "draft_ids": 0,
+    "all_draft_store": [
+      {
+        "draft_id": "DRAFT_A",
+        "draft_name": "Alpha",
+        "draft_fold_path": "${BASE}/drafts/Alpha",
+        "draft_root_path": "${BASE}/drafts",
+        "tm_draft_create": 1700000000000000,
+        "tm_draft_modified": 1700000002000000,
+        "tm_duration": 2500000,
+        "draft_timeline_materials_size": 4096,
+        "draft_is_invisible": false,
+        "draft_is_cloud_temp_draft": false
+      },
+      {
+        "draft_id": "DRAFT_B",
+        "draft_name": "Beta",
+        "draft_fold_path": "${BASE}/drafts/Beta",
+        "draft_root_path": "${BASE}/drafts",
+        "tm_draft_create": 1700000000000000,
+        "tm_draft_modified": 1700000002000000,
+        "tm_duration": 1000000,
+        "draft_timeline_materials_size": 1024
+      },
+      {
+        "draft_id": "DRAFT_C",
+        "draft_name": "Gamma",
+        "draft_fold_path": "${BASE}/drafts/Gamma",
+        "draft_root_path": "${BASE}/drafts",
+        "tm_draft_create": 1700000001000000,
+        "tm_draft_modified": 1700000003000000,
+        "tm_duration": 0,
+        "draft_timeline_materials_size": 0
+      },
+      {
+        "draft_id": "draft_a",
+        "draft_name": "Duplicate of Alpha",
+        "draft_fold_path": "${BASE}/drafts/Gamma",
+        "draft_root_path": "${BASE}/drafts"
+      },
+      {
+        "draft_id": "HIDDEN",
+        "draft_name": "Hidden",
+        "draft_fold_path": "${BASE}/drafts/Hidden",
+        "draft_is_invisible": true
+      },
+      {
+        "draft_id": "CLOUD_TEMP",
+        "draft_name": "Cloud temp",
+        "draft_fold_path": "${BASE}/drafts/CloudTemp",
+        "draft_is_cloud_temp_draft": true
+      },
+      {
+        "draft_id": "MS_TIME",
+        "draft_name": "Millisecond times",
+        "draft_fold_path": "${BASE}/drafts/MsTime",
+        "tm_draft_create": 1700000000123,
+        "tm_draft_modified": 99999999999999,
+        "tm_duration": 3.0,
+        "draft_timeline_materials_size": 7
+      },
+      {
+        "draft_id": "ISO_SPACE",
+        "draft_name": "Iso space",
+        "draft_fold_path": "${BASE}/drafts/IsoSpace",
+        "tm_draft_create": "2026-10-18",
+        "tm_draft_modified": "2026-10-18 22:34:42"
+      },
+      {
+        "draft_id": "ISO_ZULU",
+        "draft_name": "Iso zulu",
+        "draft_fold_path": "${BASE}/drafts/IsoZulu",
+        "tm_draft_modified": "2026-10-18T14:34:42Z"
+      },
+      {
+        "draft_id": "ISO_FRACTION",
+        "draft_name": "Iso fraction",
+        "draft_fold_path": "${BASE}/drafts/IsoFraction",
+        "tm_draft_create": 1792394786722043,
+        "tm_draft_modified": "2026-10-18T22:34:42.5-02:30"
+      },
+      {
+        "draft_id": "ISO_BAD",
+        "draft_name": "Iso bad",
+        "draft_fold_path": "${BASE}/drafts/IsoBad",
+        "tm_draft_create": true,
+        "tm_draft_modified": "yesterday",
+        "tm_duration": -1,
+        "draft_timeline_materials_size": "big"
+      },
+      {
+        "draft_id": "FLOAT_VALUES",
+        "draft_name": "Float values",
+        "draft_fold_path": "${BASE}/drafts/FloatValues",
+        "tm_draft_create": 1700000000500000.0,
+        "tm_draft_modified": 300000000000000000,
+        "tm_duration": 2.5,
+        "draft_timeline_materials_size": 1048576.0
+      },
+      {
+        "draft_id": "WRONG_ROOT",
+        "draft_name": "Wrong root",
+        "draft_fold_path": "${BASE}/drafts/WrongRoot",
+        "draft_root_path": "${BASE}/outside"
+      },
+      {
+        "draft_id": "NUMBER_ROOT",
+        "draft_name": "Number root",
+        "draft_fold_path": "${BASE}/drafts/NumberRoot",
+        "draft_root_path": 7
+      },
+      {
+        "draft_id": "NO_ROOT",
+        "draft_name": "No root",
+        "draft_fold_path": "${BASE}/drafts/NoRoot",
+        "tm_draft_modified": 1700000002000000
+      },
+      {
+        "draft_id": "UNICODE_1",
+        "draft_name": "草稿 Ünïcode",
+        "draft_fold_path": "${BASE}/drafts/Unicode 草稿",
+        "tm_draft_modified": 1700000002000000
+      },
+      {
+        "draft_id": "CASEFOLD",
+        "draft_name": "ΟΔΟΣ Straße ﬁle ᾈ Ꭰ",
+        "draft_fold_path": "${BASE}/drafts/Casefold",
+        "tm_draft_create": "2026-W42-1",
+        "tm_draft_modified": "2026-10-18T10:30:00+08:00:30.5"
+      },
+      {
+        "draft_id": "NESTED",
+        "draft_name": "Nested",
+        "draft_fold_path": "${BASE}/drafts/Nested/Inner",
+        "tm_draft_modified": 1700000002000000
+      },
+      {
+        "draft_id": "DOTTED",
+        "draft_name": "Dotted path",
+        "draft_fold_path": "${BASE}/drafts/Nested/../Beta",
+        "tm_draft_modified": 1600000000000000
+      },
+      {
+        "draft_id": "LINKED",
+        "draft_name": "Linked",
+        "draft_fold_path": "${BASE}/drafts/Linked"
+      },
+      {
+        "draft_id": "OUTSIDE",
+        "draft_name": "Outside",
+        "draft_fold_path": "${BASE}/outside/OutDraft"
+      },
+      {
+        "draft_id": "ROOT_ITSELF",
+        "draft_name": "Root itself",
+        "draft_fold_path": "${BASE}/drafts"
+      },
+      {
+        "draft_id": "NOT_A_DIR",
+        "draft_name": "Not a dir",
+        "draft_fold_path": "${BASE}/drafts/NotADir"
+      },
+      {
+        "draft_id": "MISSING_DIR",
+        "draft_name": "Missing dir",
+        "draft_fold_path": "${BASE}/drafts/Missing"
+      },
+      {
+        "draft_id": "../evil",
+        "draft_name": "Evil",
+        "draft_fold_path": "${BASE}/drafts/Alpha"
+      },
+      {
+        "draft_id": "EMPTY_NAME",
+        "draft_name": "",
+        "draft_fold_path": "${BASE}/drafts/Alpha"
+      },
+      {
+        "draft_id": "LONG_NAME",
+        "draft_name": "${LONG_NAME}",
+        "draft_fold_path": "${BASE}/drafts/Alpha"
+      },
+      {
+        "draft_id": "BLANK_PATH",
+        "draft_name": "Blank path",
+        "draft_fold_path": "   "
+      },
+      {
+        "draft_id": 42,
+        "draft_name": "Number id",
+        "draft_fold_path": "${BASE}/drafts/Alpha"
+      },
+      "not a record",
+      null
+    ]
+  },
+  "lists": [
+    {},
+    { "limit": 2, "offset": 1 },
+    { "query": "alpha" },
+    { "query": "DRAFT_" },
+    { "query": "草稿" },
+    { "query": "ünï" },
+    { "limit": 200, "offset": 10000 },
+    { "limit": 0 },
+    { "limit": 201 },
+    { "offset": -1 },
+    { "offset": 10001 },
+    { "query": "${LONG_QUERY}" },
+    { "query": "οδοσ" },
+    { "query": "ΟΔΟΣ" },
+    { "query": "STRASSE" },
+    { "query": "FILE" },
+    { "query": "ἀι" },
+    { "query": "ꭰ" },
+    { "query": "ı" },
+    { "query": "casefold" }
+  ],
+  "gets": ["DRAFT_A", "draft_c", "MS_TIME", "UNICODE_1", "LINKED", "HIDDEN", "NOT_FOUND", "../evil", "bad\u0000id", "<script>", ""],
+  "timestamps": [
+    1700000000000000,
+    1700000000123456,
+    1700000000123,
+    99999999999999,
+    100000000000000,
+    1,
+    0,
+    -5,
+    true,
+    false,
+    1792394786722043,
+    1700000000500000.7,
+    300000000000000000,
+    "2026-10-18",
+    "2026-10-18 22:34:42",
+    "2026-10-18T22:34:42",
+    "2026-10-18T14:34:42Z",
+    "2026-10-18T22:34:42.5+08:00",
+    "2026-10-18T22:34:42.123456-02:30",
+    "2026-10-18T22:34",
+    "2026-02-30 10:00:00",
+    "2026-W42-1",
+    "2026W421",
+    "2026-W42",
+    "2026W42",
+    "2026-W53-7",
+    "2025-W53-1",
+    "2026-W42-1T23:59:59-23:59:59.999999",
+    "0001-01-01T00:00:00",
+    "0001-01-01T08:00:00",
+    "9999-12-31T23:59:59",
+    "9999-12-31T23:59:59-08:00",
+    "2026-10-18T10:30:00+08:00:30.5",
+    "2026-10-18T10:30:00+00:00:00.5",
+    "2026-10-18T10:30:00+08:99",
+    "2026-10-18T10:30:00.Z",
+    "2026-10-18T10:30:00.",
+    "2026-10-18T",
+    "2026-10-18T10:30:00:00",
+    "2026-10-18T103000.5",
+    "2026-10-18T10:30:00,1234567",
+    "2026-10-18T24:00:00",
+    "2026-10-18中10:30",
+    "2026-10-18\ud80010:30",
+    "2026-10-18T10:30\ud800",
+    "yesterday",
+    null,
+    "",
+    [1]
+  ],
+  "records": [
+    {
+      "content": {
+        "id": "870F8B67-3D2F-441C-BDE0-760C8529A2DE",
+        "name": "Record sample",
+        "create_time": 1700000000,
+        "update_time": 1699999990,
+        "duration": 5000000,
+        "materials": {
+          "videos": [{ "material_size": 10 }, { "material_size": 5 }, "skip"],
+          "audios": [{ "material_size": 1 }, { "other": true }]
+        }
+      }
+    },
+    {
+      "content": {
+        "create_time": 1700000000,
+        "update_time": 1700000005,
+        "duration": 0,
+        "materials": { "videos": [{ "material_size": 1.5 }] }
+      }
+    },
+    {
+      "content": {
+        "create_time": 1700000000,
+        "update_time": 1700000005,
+        "duration": 0,
+        "materials": { "videos": [{ "material_size": "big" }] }
+      }
+    },
+    {
+      "content": {
+        "create_time": 1700000000,
+        "update_time": 1700000005,
+        "duration": 0,
+        "materials": []
+      }
+    },
+    {
+      "content": { "create_time": 1700000000, "update_time": 1700000005, "duration": 0 }
+    },
+    {
+      "content": { "create_time": true, "update_time": 1700000005, "duration": 0 }
+    },
+    {
+      "content": { "create_time": 1700000000, "update_time": -1, "duration": 0 }
+    },
+    {
+      "content": { "create_time": 1700000000, "update_time": 1700000005, "duration": "1" }
+    }
+  ]
+}

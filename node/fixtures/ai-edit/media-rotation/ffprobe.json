@@ -1,0 +1,32 @@
+{
+ "hflip.mp4": {
+  "width": 128,
+  "height": 72,
+  "ffprobe_rotation": -180
+ },
+ "rot180.mov": {
+  "width": 128,
+  "height": 72,
+  "ffprobe_rotation": -180
+ },
+ "rot270.mp4": {
+  "width": 128,
+  "height": 72,
+  "ffprobe_rotation": -90
+ },
+ "rot45.mp4": {
+  "width": 128,
+  "height": 72,
+  "ffprobe_rotation": 45
+ },
+ "rot90-hflip.mp4": {
+  "width": 128,
+  "height": 72,
+  "ffprobe_rotation": 90
+ },
+ "rot90.mp4": {
+  "width": 128,
+  "height": 72,
+  "ffprobe_rotation": 90
+ }
+}

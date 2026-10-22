@@ -1,0 +1,813 @@
+{
+    "canvas_config": {
+        "width": 1920,
+        "height": 1080,
+        "ratio": "original"
+    },
+    "color_space": 0,
+    "config": {
+        "adjust_max_index": 1,
+        "attachment_info": [],
+        "combination_max_index": 1,
+        "export_range": null,
+        "extract_audio_last_index": 1,
+        "lyrics_recognition_id": "",
+        "lyrics_sync": true,
+        "lyrics_taskinfo": [],
+        "maintrack_adsorb": true,
+        "material_save_mode": 0,
+        "multi_language_current": "none",
+        "multi_language_list": [],
+        "multi_language_main": "none",
+        "multi_language_mode": "none",
+        "original_sound_last_index": 1,
+        "record_audio_last_index": 1,
+        "sticker_max_index": 1,
+        "subtitle_keywords_config": null,
+        "subtitle_recognition_id": "",
+        "subtitle_sync": true,
+        "subtitle_taskinfo": [],
+        "system_font_list": [],
+        "video_mute": false,
+        "zoom_info_params": null
+    },
+    "cover": null,
+    "create_time": 1792396871,
+    "duration": 6000000,
+    "extra_info": null,
+    "fps": 30,
+    "free_render_index_mode_on": false,
+    "group_container": null,
+    "id": "A6AD0C9F-811A-4A77-37CE-B97CEB0BA9A2",
+    "keyframe_graph_list": [],
+    "keyframes": {
+        "adjusts": [],
+        "audios": [],
+        "effects": [],
+        "filters": [],
+        "handwrites": [],
+        "stickers": [],
+        "texts": [],
+        "videos": []
+    },
+    "last_modified_platform": {
+        "app_id": 3704,
+        "app_source": "lv",
+        "app_version": "11.6.0.14552",
+        "os": "windows"
+    },
+    "platform": {
+        "app_id": 3704,
+        "app_source": "lv",
+        "app_version": "11.6.0.14552",
+        "os": "windows"
+    },
+    "materials": {
+        "ai_translates": [],
+        "audio_balances": [],
+        "audio_effects": [
+            {
+                "audio_adjust_params": [
+                    {
+                        "default_value": 0.8,
+                        "max_value": 1.0,
+                        "min_value": 0.0,
+                        "name": "change_voice_param_quantity",
+                        "parameterIndex": 0,
+                        "portIndex": 0,
+                        "value": 0.3
+                    },
+                    {
+                        "default_value": 0.762,
+                        "max_value": 1.0,
+                        "min_value": 0.0,
+                        "name": "change_voice_param_strength",
+                        "parameterIndex": 1,
+                        "portIndex": 0,
+                        "value": 0.7
+                    }
+                ],
+                "id": "face00000000000000000000000000de",
+                "name": "回音",
+                "resource_id": "7018011608408396325",
+                "type": "audio_effect",
+                "category_id": "sound_effect",
+                "category_name": "场景音",
+                "is_ugc": false,
+                "production_path": "",
+                "speaker_id": "",
+                "sub_type": 1,
+                "time_range": {
+                    "duration": 0,
+                    "start": 0
+                }
+            },
+            {
+                "audio_adjust_params": [
+                    {
+                        "default_value": 0.834,
+                        "max_value": 1.0,
+                        "min_value": 0.0,
+                        "name": "音调",
+                        "parameterIndex": 0,
+                        "portIndex": 0,
+                        "value": 0.2
+                    },
+                    {
+                        "default_value": 1.0,
+                        "max_value": 1.0,
+                        "min_value": 0.0,
+                        "name": "音色",
+                        "parameterIndex": 1,
+                        "portIndex": 0,
+                        "value": 1.0
+                    }
+                ],
+                "id": "face00000000000000000000000000df",
+                "name": "大叔",
+                "resource_id": "7020344898033291790",
+                "type": "audio_effect"
+            },
+            {
+                "audio_adjust_params": [],
+                "id": "face00000000000000000000000000e0",
+                "name": "Lofi",
+                "resource_id": "7252917861948068410",
+                "type": "audio_effect",
+                "category_id": "speech_to_song",
+                "category_name": "声音成曲",
+                "is_ugc": false,
+                "production_path": "",
+                "speaker_id": "",
+                "sub_type": 3,
+                "time_range": {
+                    "duration": 0,
+                    "start": 0
+                }
+            }
+        ],
+        "audio_fades": [
+            {
+                "id": "face00000000000000000000000000dd",
+                "fade_in_duration": 500000,
+                "fade_out_duration": 1000000,
+                "fade_type": 0,
+                "type": "audio_fade"
+            },
+            {
+                "id": "face00000000000000000000000000f6",
+                "fade_in_duration": 0,
+                "fade_out_duration": 400000,
+                "fade_type": 0,
+                "type": "audio_fade"
+            }
+        ],
+        "audio_track_indexes": [],
+        "audios": [
+            {
+                "app_id": 0,
+                "category_id": "",
+                "category_name": "local",
+                "check_flag": 3,
+                "copyright_limit_type": "none",
+                "duration": 3500000,
+                "effect_id": "",
+                "formula_id": "",
+                "id": "69c9b01f70f2a1d43961ca5643cbc567",
+                "local_material_id": "69c9b01f70f2a1d43961ca5643cbc567",
+                "music_id": "69c9b01f70f2a1d43961ca5643cbc567",
+                "name": "tone",
+                "path": "${MEDIA}/tone.mp3",
+                "source_platform": 0,
+                "type": "extract_music",
+                "wave_points": []
+            },
+            {
+                "app_id": 0,
+                "category_id": "",
+                "category_name": "local",
+                "check_flag": 3,
+                "copyright_limit_type": "none",
+                "duration": 1800000,
+                "effect_id": "",
+                "formula_id": "",
+                "id": "35e43c0527d5f27febcaef2ca8419d7b",
+                "local_material_id": "35e43c0527d5f27febcaef2ca8419d7b",
+                "music_id": "35e43c0527d5f27febcaef2ca8419d7b",
+                "name": "tone",
+                "path": "${MEDIA}/tone.flac",
+                "source_platform": 0,
+                "type": "extract_music",
+                "wave_points": []
+            },
+            {
+                "app_id": 0,
+                "category_id": "",
+                "category_name": "local",
+                "check_flag": 3,
+                "copyright_limit_type": "none",
+                "duration": 2200000,
+                "effect_id": "",
+                "formula_id": "",
+                "id": "420809cc42d0701fc4020fa12af84185",
+                "local_material_id": "420809cc42d0701fc4020fa12af84185",
+                "music_id": "420809cc42d0701fc4020fa12af84185",
+                "name": "tone",
+                "path": "${MEDIA}/tone.m4a",
+                "source_platform": 0,
+                "type": "extract_music",
+                "wave_points": []
+            },
+            {
+                "app_id": 0,
+                "category_id": "",
+                "category_name": "local",
+                "check_flag": 3,
+                "copyright_limit_type": "none",
+                "duration": 3106500,
+                "effect_id": "",
+                "formula_id": "",
+                "id": "68c3afe4bf14e76a0f655399a38ba05f",
+                "local_material_id": "68c3afe4bf14e76a0f655399a38ba05f",
+                "music_id": "68c3afe4bf14e76a0f655399a38ba05f",
+                "name": "tone",
+                "path": "${MEDIA}/tone.ogg",
+                "source_platform": 0,
+                "type": "extract_music",
+                "wave_points": []
+            },
+            {
+                "app_id": 0,
+                "category_id": "",
+                "category_name": "local",
+                "check_flag": 3,
+                "copyright_limit_type": "none",
+                "duration": 2729781,
+                "effect_id": "",
+                "formula_id": "",
+                "id": "0ebc87f6298a96f65510b5a22032f81c",
+                "local_material_id": "0ebc87f6298a96f65510b5a22032f81c",
+                "music_id": "0ebc87f6298a96f65510b5a22032f81c",
+                "name": "tone",
+                "path": "${MEDIA}/tone.aac",
+                "source_platform": 0,
+                "type": "extract_music",
+                "wave_points": []
+            },
+            {
+                "app_id": 0,
+                "category_id": "",
+                "category_name": "local",
+                "check_flag": 3,
+                "copyright_limit_type": "none",
+                "duration": 4000000,
+                "effect_id": "",
+                "formula_id": "",
+                "id": "aeb1a8f1e7421eb1240b43b1b3f2db96",
+                "local_material_id": "aeb1a8f1e7421eb1240b43b1b3f2db96",
+                "music_id": "aeb1a8f1e7421eb1240b43b1b3f2db96",
+                "name": "tone",
+                "path": "${MEDIA}/tone.wav",
+                "source_platform": 0,
+                "type": "extract_music",
+                "wave_points": []
+            }
+        ],
+        "beats": [],
+        "canvases": [],
+        "chromas": [],
+        "common_mask": [],
+        "color_curves": [],
+        "digital_humans": [],
+        "drafts": [],
+        "effects": [],
+        "flowers": [],
+        "green_screens": [],
+        "handwrites": [],
+        "hsl": [],
+        "images": [],
+        "log_color_wheels": [],
+        "loudnesses": [],
+        "manual_deformations": [],
+        "masks": [],
+        "material_animations": [],
+        "material_colors": [],
+        "multi_language_refs": [],
+        "placeholders": [],
+        "plugin_effects": [],
+        "primary_color_wheels": [],
+        "realtime_denoises": [],
+        "shapes": [],
+        "smart_crops": [],
+        "smart_relights": [],
+        "sound_channel_mappings": [],
+        "speeds": [
+            {
+                "curve_speed": null,
+                "id": "face00000000000000000000000000d8",
+                "mode": 0,
+                "speed": 1.0,
+                "type": "speed"
+            },
+            {
+                "curve_speed": null,
+                "id": "face00000000000000000000000000e3",
+                "mode": 0,
+                "speed": 1.5,
+                "type": "speed"
+            },
+            {
+                "curve_speed": null,
+                "id": "face00000000000000000000000000e6",
+                "mode": 0,
+                "speed": 1.0,
+                "type": "speed"
+            },
+            {
+                "curve_speed": null,
+                "id": "face00000000000000000000000000e9",
+                "mode": 0,
+                "speed": 1.0,
+                "type": "speed"
+            },
+            {
+                "curve_speed": null,
+                "id": "face00000000000000000000000000ec",
+                "mode": 0,
+                "speed": 1.0,
+                "type": "speed"
+            },
+            {
+                "curve_speed": null,
+                "id": "face00000000000000000000000000ef",
+                "mode": 0,
+                "speed": 1.5,
+                "type": "speed"
+            },
+            {
+                "curve_speed": null,
+                "id": "face00000000000000000000000000f2",
+                "mode": 0,
+                "speed": 1.0,
+                "type": "speed"
+            }
+        ],
+        "stickers": [],
+        "tail_leaders": [],
+        "text_templates": [],
+        "texts": [],
+        "time_marks": [],
+        "transitions": [],
+        "video_effects": [],
+        "video_trackings": [],
+        "videos": [
+            {
+                "audio_fade": null,
+                "category_id": "",
+                "category_name": "local",
+                "check_flag": 63487,
+                "crop": {
+                    "upper_left_x": 0.0,
+                    "upper_left_y": 0.0,
+                    "upper_right_x": 1.0,
+                    "upper_right_y": 0.0,
+                    "lower_left_x": 0.0,
+                    "lower_left_y": 1.0,
+                    "lower_right_x": 1.0,
+                    "lower_right_y": 1.0
+                },
+                "crop_ratio": "free",
+                "crop_scale": 1.0,
+                "duration": 3000000,
+                "height": 720,
+                "id": "3dc7fad553ac89580b95ffa1d0827030",
+                "local_material_id": "",
+                "material_id": "3dc7fad553ac89580b95ffa1d0827030",
+                "material_name": "clip-720p",
+                "media_path": "",
+                "path": "${MEDIA}/clip-720p.mp4",
+                "type": "video",
+                "width": 1280
+            }
+        ],
+        "vocal_beautifys": [],
+        "vocal_separations": []
+    },
+    "mutable_config": null,
+    "name": "音频处理",
+    "new_version": "110.0.0",
+    "relationships": [],
+    "render_index_track_mode_on": false,
+    "retouch_cover": null,
+    "source": "default",
+    "static_cover_image_path": "",
+    "time_marks": null,
+    "tracks": [
+        {
+            "attribute": 0,
+            "flag": 0,
+            "id": "face00000000000000000000000000d3",
+            "is_default_name": false,
+            "name": "音乐",
+            "segments": [
+                {
+                    "enable_adjust": true,
+                    "enable_color_correct_adjust": false,
+                    "enable_color_curves": true,
+                    "enable_color_match_adjust": false,
+                    "enable_color_wheels": true,
+                    "enable_lut": true,
+                    "enable_smart_color_adjust": false,
+                    "last_nonzero_volume": 1.0,
+                    "reverse": false,
+                    "track_attribute": 0,
+                    "track_render_index": 0,
+                    "visible": true,
+                    "id": "1ec6b34acfbd6dfec74c55af35bb37ad",
+                    "material_id": "69c9b01f70f2a1d43961ca5643cbc567",
+                    "target_timerange": {
+                        "start": 0,
+                        "duration": 3000000
+                    },
+                    "common_keyframes": [
+                        {
+                            "id": "face00000000000000000000000000d9",
+                            "keyframe_list": [
+                                {
+                                    "curveType": "Line",
+                                    "graphID": "",
+                                    "left_control": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
+                                    "right_control": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
+                                    "id": "face00000000000000000000000000da",
+                                    "time_offset": 0,
+                                    "values": [
+                                        0.2
+                                    ]
+                                },
+                                {
+                                    "curveType": "Line",
+                                    "graphID": "",
+                                    "left_control": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
+                                    "right_control": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
+                                    "id": "face00000000000000000000000000db",
+                                    "time_offset": 1000000,
+                                    "values": [
+                                        1.0
+                                    ]
+                                },
+                                {
+                                    "curveType": "Line",
+                                    "graphID": "",
+                                    "left_control": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
+                                    "right_control": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
+                                    "id": "face00000000000000000000000000dc",
+                                    "time_offset": 3000000,
+                                    "values": [
+                                        0.0
+                                    ]
+                                }
+                            ],
+                            "material_id": "",
+                            "property_type": "KFTypeVolume"
+                        }
+                    ],
+                    "keyframe_refs": [],
+                    "source_timerange": {
+                        "start": 0,
+                        "duration": 3000000
+                    },
+                    "speed": 1.0,
+                    "volume": 1.2,
+                    "extra_material_refs": [
+                        "face00000000000000000000000000d8",
+                        "face00000000000000000000000000dd",
+                        "face00000000000000000000000000de",
+                        "face00000000000000000000000000df",
+                        "face00000000000000000000000000e0"
+                    ],
+                    "is_tone_modify": false,
+                    "clip": null,
+                    "hdr_settings": null,
+                    "render_index": 0
+                },
+                {
+                    "enable_adjust": true,
+                    "enable_color_correct_adjust": false,
+                    "enable_color_curves": true,
+                    "enable_color_match_adjust": false,
+                    "enable_color_wheels": true,
+                    "enable_lut": true,
+                    "enable_smart_color_adjust": false,
+                    "last_nonzero_volume": 1.0,
+                    "reverse": false,
+                    "track_attribute": 0,
+                    "track_render_index": 0,
+                    "visible": true,
+                    "id": "ba306850f4c080523c104360d81c6b45",
+                    "material_id": "35e43c0527d5f27febcaef2ca8419d7b",
+                    "target_timerange": {
+                        "start": 3000000,
+                        "duration": 1000000
+                    },
+                    "common_keyframes": [],
+                    "keyframe_refs": [],
+                    "source_timerange": {
+                        "start": 0,
+                        "duration": 1500000
+                    },
+                    "speed": 1.5,
+                    "volume": 1.0,
+                    "extra_material_refs": [
+                        "face00000000000000000000000000e3"
+                    ],
+                    "is_tone_modify": true,
+                    "clip": null,
+                    "hdr_settings": null,
+                    "render_index": 0
+                },
+                {
+                    "enable_adjust": true,
+                    "enable_color_correct_adjust": false,
+                    "enable_color_curves": true,
+                    "enable_color_match_adjust": false,
+                    "enable_color_wheels": true,
+                    "enable_lut": true,
+                    "enable_smart_color_adjust": false,
+                    "last_nonzero_volume": 1.0,
+                    "reverse": false,
+                    "track_attribute": 0,
+                    "track_render_index": 0,
+                    "visible": true,
+                    "id": "5021752b0be33ddde0e5599ea02efbdc",
+                    "material_id": "420809cc42d0701fc4020fa12af84185",
+                    "target_timerange": {
+                        "start": 4000000,
+                        "duration": 2000000
+                    },
+                    "common_keyframes": [],
+                    "keyframe_refs": [],
+                    "source_timerange": {
+                        "start": 200000,
+                        "duration": 2000000
+                    },
+                    "speed": 1.0,
+                    "volume": 1.8,
+                    "extra_material_refs": [
+                        "face00000000000000000000000000e6"
+                    ],
+                    "is_tone_modify": false,
+                    "clip": null,
+                    "hdr_settings": null,
+                    "render_index": 0
+                }
+            ],
+            "type": "audio"
+        },
+        {
+            "attribute": 1,
+            "flag": 0,
+            "id": "face00000000000000000000000000d4",
+            "is_default_name": false,
+            "name": "人声",
+            "segments": [
+                {
+                    "enable_adjust": true,
+                    "enable_color_correct_adjust": false,
+                    "enable_color_curves": true,
+                    "enable_color_match_adjust": false,
+                    "enable_color_wheels": true,
+                    "enable_lut": true,
+                    "enable_smart_color_adjust": false,
+                    "last_nonzero_volume": 1.0,
+                    "reverse": false,
+                    "track_attribute": 0,
+                    "track_render_index": 0,
+                    "visible": true,
+                    "id": "b7861b3f5495c5573d0437a45e08674f",
+                    "material_id": "68c3afe4bf14e76a0f655399a38ba05f",
+                    "target_timerange": {
+                        "start": 0,
+                        "duration": 3000000
+                    },
+                    "common_keyframes": [],
+                    "keyframe_refs": [],
+                    "source_timerange": {
+                        "start": 100000,
+                        "duration": 3000000
+                    },
+                    "speed": 1.0,
+                    "volume": 1.0,
+                    "extra_material_refs": [
+                        "face00000000000000000000000000e9"
+                    ],
+                    "is_tone_modify": false,
+                    "clip": null,
+                    "hdr_settings": null,
+                    "render_index": 1
+                },
+                {
+                    "enable_adjust": true,
+                    "enable_color_correct_adjust": false,
+                    "enable_color_curves": true,
+                    "enable_color_match_adjust": false,
+                    "enable_color_wheels": true,
+                    "enable_lut": true,
+                    "enable_smart_color_adjust": false,
+                    "last_nonzero_volume": 1.0,
+                    "reverse": false,
+                    "track_attribute": 0,
+                    "track_render_index": 0,
+                    "visible": true,
+                    "id": "9c367583dc26d2dc14b900c0cb126e12",
+                    "material_id": "0ebc87f6298a96f65510b5a22032f81c",
+                    "target_timerange": {
+                        "start": 3000000,
+                        "duration": 2000000
+                    },
+                    "common_keyframes": [],
+                    "keyframe_refs": [],
+                    "source_timerange": {
+                        "start": 0,
+                        "duration": 2000000
+                    },
+                    "speed": 1.0,
+                    "volume": 1.0,
+                    "extra_material_refs": [
+                        "face00000000000000000000000000ec"
+                    ],
+                    "is_tone_modify": false,
+                    "clip": null,
+                    "hdr_settings": null,
+                    "render_index": 1
+                },
+                {
+                    "enable_adjust": true,
+                    "enable_color_correct_adjust": false,
+                    "enable_color_curves": true,
+                    "enable_color_match_adjust": false,
+                    "enable_color_wheels": true,
+                    "enable_lut": true,
+                    "enable_smart_color_adjust": false,
+                    "last_nonzero_volume": 1.0,
+                    "reverse": false,
+                    "track_attribute": 0,
+                    "track_render_index": 0,
+                    "visible": true,
+                    "id": "c83c910520d91ec85c7a4829f613ee0e",
+                    "material_id": "aeb1a8f1e7421eb1240b43b1b3f2db96",
+                    "target_timerange": {
+                        "start": 5000000,
+                        "duration": 1000000
+                    },
+                    "common_keyframes": [],
+                    "keyframe_refs": [],
+                    "source_timerange": {
+                        "start": 2500000,
+                        "duration": 1500000
+                    },
+                    "speed": 1.5,
+                    "volume": 1.0,
+                    "extra_material_refs": [
+                        "face00000000000000000000000000ef"
+                    ],
+                    "is_tone_modify": false,
+                    "clip": null,
+                    "hdr_settings": null,
+                    "render_index": 1
+                }
+            ],
+            "type": "audio"
+        },
+        {
+            "attribute": 0,
+            "flag": 0,
+            "id": "face00000000000000000000000000d5",
+            "is_default_name": false,
+            "name": "画面",
+            "segments": [
+                {
+                    "enable_adjust": true,
+                    "enable_color_correct_adjust": false,
+                    "enable_color_curves": true,
+                    "enable_color_match_adjust": false,
+                    "enable_color_wheels": true,
+                    "enable_lut": true,
+                    "enable_smart_color_adjust": false,
+                    "last_nonzero_volume": 1.0,
+                    "reverse": false,
+                    "track_attribute": 0,
+                    "track_render_index": 0,
+                    "visible": true,
+                    "id": "ac70d502bdb05c99ad5703b633ee15cc",
+                    "material_id": "3dc7fad553ac89580b95ffa1d0827030",
+                    "target_timerange": {
+                        "start": 0,
+                        "duration": 3000000
+                    },
+                    "common_keyframes": [
+                        {
+                            "id": "face00000000000000000000000000f3",
+                            "keyframe_list": [
+                                {
+                                    "curveType": "Line",
+                                    "graphID": "",
+                                    "left_control": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
+                                    "right_control": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
+                                    "id": "face00000000000000000000000000f4",
+                                    "time_offset": 0,
+                                    "values": [
+                                        0.0
+                                    ]
+                                },
+                                {
+                                    "curveType": "Line",
+                                    "graphID": "",
+                                    "left_control": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
+                                    "right_control": {
+                                        "x": 0.0,
+                                        "y": 0.0
+                                    },
+                                    "id": "face00000000000000000000000000f5",
+                                    "time_offset": 1000000,
+                                    "values": [
+                                        1.0
+                                    ]
+                                }
+                            ],
+                            "material_id": "",
+                            "property_type": "KFTypeVolume"
+                        }
+                    ],
+                    "keyframe_refs": [],
+                    "source_timerange": {
+                        "start": 0,
+                        "duration": 3000000
+                    },
+                    "speed": 1.0,
+                    "volume": 1.0,
+                    "extra_material_refs": [
+                        "face00000000000000000000000000f2",
+                        "face00000000000000000000000000f6"
+                    ],
+                    "is_tone_modify": false,
+                    "clip": {
+                        "alpha": 1.0,
+                        "flip": {
+                            "horizontal": false,
+                            "vertical": false
+                        },
+                        "rotation": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "transform": {
+                            "x": 0.0,
+                            "y": 0.0
+                        }
+                    },
+                    "uniform_scale": {
+                        "on": true,
+                        "value": 1.0
+                    },
+                    "hdr_settings": {
+                        "intensity": 1.0,
+                        "mode": 1,
+                        "nits": 1000
+                    },
+                    "render_index": 2
+                }
+            ],
+            "type": "video"
+        }
+    ],
+    "update_time": 1792396888,
+    "version": 360000
+}

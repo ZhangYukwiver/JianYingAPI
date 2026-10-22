@@ -1,0 +1,2303 @@
+{
+  "flow": {
+    "draft_id": "870F8B67-3D2F-441C-BDE0-760C8529A2DE",
+    "main_timeline_id": "4D2B6B0E-1C3A-4F5B-9D7E-2A1B3C4D5E6F",
+    "project_v1": {
+      "name": "原生草稿 Native",
+      "canvas": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      },
+      "id": "00000000000000000000000000000001",
+      "created_at": "2026-10-19T08:00:00.123456Z",
+      "updated_at": "2026-10-19T08:00:00.130456Z",
+      "revision": 8,
+      "tracks": [
+        {
+          "id": "00000000000000000000000000000004",
+          "track_type": "video",
+          "name": "Video",
+          "mute": false,
+          "segments": [
+            {
+              "id": "0000000000000000000000000000000d",
+              "kind": "video",
+              "path": "${MEDIA}/clip-720p.mp4",
+              "timeline": {
+                "start_us": 0,
+                "duration_us": 2000000
+              },
+              "source": {
+                "start_us": 0,
+                "duration_us": 2000000
+              },
+              "volume": 1.0,
+              "speed": 1.0,
+              "change_pitch": false,
+              "fit": "contain",
+              "transform": null,
+              "crop": null,
+              "material_name": "clip-720p.mp4",
+              "keyframes": [],
+              "effects": [],
+              "filters": [],
+              "animations": [],
+              "transition": null,
+              "fade": null
+            },
+            {
+              "id": "00000000000000000000000000000010",
+              "kind": "image",
+              "path": "${MEDIA}/still.png",
+              "timeline": {
+                "start_us": 2000000,
+                "duration_us": 1000000
+              },
+              "source": {
+                "start_us": 0,
+                "duration_us": 1000000
+              },
+              "volume": 1.0,
+              "speed": 1.0,
+              "change_pitch": false,
+              "fit": "contain",
+              "transform": null,
+              "crop": null,
+              "material_name": "still.png",
+              "keyframes": [],
+              "effects": [],
+              "filters": [],
+              "animations": [],
+              "transition": null,
+              "fade": null
+            }
+          ]
+        },
+        {
+          "id": "00000000000000000000000000000007",
+          "track_type": "audio",
+          "name": "Audio",
+          "mute": false,
+          "segments": [
+            {
+              "id": "00000000000000000000000000000013",
+              "kind": "audio",
+              "path": "${MEDIA}/tone.mp3",
+              "timeline": {
+                "start_us": 0,
+                "duration_us": 1000000
+              },
+              "source": {
+                "start_us": 0,
+                "duration_us": 1000000
+              },
+              "volume": 1.0,
+              "speed": 1.0,
+              "change_pitch": false,
+              "fit": "contain",
+              "transform": null,
+              "crop": null,
+              "material_name": "tone.mp3",
+              "keyframes": [],
+              "effects": [],
+              "filters": [],
+              "animations": [],
+              "transition": null,
+              "fade": null
+            }
+          ]
+        },
+        {
+          "id": "0000000000000000000000000000000a",
+          "track_type": "text",
+          "name": "Text",
+          "mute": false,
+          "segments": [
+            {
+              "id": "00000000000000000000000000000016",
+              "kind": "text",
+              "text": "你好剪映",
+              "timeline": {
+                "start_us": 0,
+                "duration_us": 1500000
+              },
+              "transform": null,
+              "font_size": 8.0,
+              "color": "#FFFFFF",
+              "alignment": "center",
+              "font_family": null,
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "opacity": 1.0,
+              "vertical": false,
+              "letter_spacing": 0,
+              "line_spacing": 0,
+              "auto_wrapping": true,
+              "max_line_width": 0.82,
+              "border": null,
+              "background": null,
+              "shadow": null,
+              "bubble": null,
+              "text_effect_id": null,
+              "keyframes": [],
+              "animations": []
+            }
+          ]
+        }
+      ],
+      "markers": [],
+      "draft": null
+    },
+    "project_v2": {
+      "name": "修复后的草稿 Repaired",
+      "canvas": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      },
+      "id": "00000000000000000000000000000001",
+      "created_at": "2026-10-19T08:00:00.123456Z",
+      "updated_at": "2026-10-19T08:00:00.131456Z",
+      "revision": 9,
+      "tracks": [
+        {
+          "id": "00000000000000000000000000000004",
+          "track_type": "video",
+          "name": "Video",
+          "mute": false,
+          "segments": [
+            {
+              "id": "0000000000000000000000000000000d",
+              "kind": "video",
+              "path": "${MEDIA}/clip-720p.mp4",
+              "timeline": {
+                "start_us": 0,
+                "duration_us": 2000000
+              },
+              "source": {
+                "start_us": 0,
+                "duration_us": 2000000
+              },
+              "volume": 1.0,
+              "speed": 1.0,
+              "change_pitch": false,
+              "fit": "contain",
+              "transform": null,
+              "crop": null,
+              "material_name": "clip-720p.mp4",
+              "keyframes": [],
+              "effects": [],
+              "filters": [],
+              "animations": [],
+              "transition": null,
+              "fade": null
+            },
+            {
+              "id": "00000000000000000000000000000010",
+              "kind": "image",
+              "path": "${MEDIA}/still.png",
+              "timeline": {
+                "start_us": 2000000,
+                "duration_us": 1000000
+              },
+              "source": {
+                "start_us": 0,
+                "duration_us": 1000000
+              },
+              "volume": 1.0,
+              "speed": 1.0,
+              "change_pitch": false,
+              "fit": "contain",
+              "transform": null,
+              "crop": null,
+              "material_name": "still.png",
+              "keyframes": [],
+              "effects": [],
+              "filters": [],
+              "animations": [],
+              "transition": null,
+              "fade": null
+            }
+          ]
+        },
+        {
+          "id": "00000000000000000000000000000007",
+          "track_type": "audio",
+          "name": "Audio",
+          "mute": false,
+          "segments": [
+            {
+              "id": "00000000000000000000000000000013",
+              "kind": "audio",
+              "path": "${MEDIA}/tone.mp3",
+              "timeline": {
+                "start_us": 0,
+                "duration_us": 1000000
+              },
+              "source": {
+                "start_us": 0,
+                "duration_us": 1000000
+              },
+              "volume": 1.0,
+              "speed": 1.0,
+              "change_pitch": false,
+              "fit": "contain",
+              "transform": null,
+              "crop": null,
+              "material_name": "tone.mp3",
+              "keyframes": [],
+              "effects": [],
+              "filters": [],
+              "animations": [],
+              "transition": null,
+              "fade": null
+            }
+          ]
+        },
+        {
+          "id": "0000000000000000000000000000000a",
+          "track_type": "text",
+          "name": "Text",
+          "mute": false,
+          "segments": [
+            {
+              "id": "00000000000000000000000000000016",
+              "kind": "text",
+              "text": "你好剪映",
+              "timeline": {
+                "start_us": 0,
+                "duration_us": 1500000
+              },
+              "transform": null,
+              "font_size": 8.0,
+              "color": "#FFFFFF",
+              "alignment": "center",
+              "font_family": null,
+              "bold": false,
+              "italic": false,
+              "underline": false,
+              "opacity": 1.0,
+              "vertical": false,
+              "letter_spacing": 0,
+              "line_spacing": 0,
+              "auto_wrapping": true,
+              "max_line_width": 0.82,
+              "border": null,
+              "background": null,
+              "shadow": null,
+              "bubble": null,
+              "text_effect_id": null,
+              "keyframes": [],
+              "animations": []
+            }
+          ]
+        }
+      ],
+      "markers": [],
+      "draft": null
+    },
+    "media": [
+      {
+        "path": "${MEDIA}/clip-720p.mp4",
+        "kind": "video",
+        "duration_us": 3000000,
+        "width": 1280,
+        "height": 720,
+        "audio": true,
+        "video": true
+      },
+      {
+        "path": "${MEDIA}/still.png",
+        "kind": "image",
+        "duration_us": 86400000000,
+        "width": 800,
+        "height": 600,
+        "audio": false,
+        "video": true
+      },
+      {
+        "path": "${MEDIA}/tone.mp3",
+        "kind": "audio",
+        "duration_us": 3500000,
+        "width": null,
+        "height": null,
+        "audio": true,
+        "video": false
+      }
+    ],
+    "index_before": "{\"root_path\":\"${BASE}/index\",\"all_draft_store\":[{\"draft_id\":\"CLOUD_OTHER\",\"draft_name\":\"别人的云草稿\",\"draft_fold_path\":\"${BASE}/drafts/CloudOther\",\"tm_draft_cloud_user_id\":7234567890123456789,\"tm_draft_cloud_entry_id\":7345678901234567891,\"tm_draft_cloud_space_id\":7012345678901234567,\"draft_timeline_materials_size\":1.0,\"tm_duration\":2500000.0,\"ratio\":0.1,\"tiny\":1e-07,\"huge\":1e+22,\"negative_zero\":-0.0,\"nested\":{\"10\":[1.0,-1],\"2\":{\"z\":null,\"a\":true}}}],\"draft_ids\":0,\"untouched\":{\"keep\":[\"all\",\"original\",\"fields\"],\"written\":[2.5e6,1E+2,-0,12345678901234567890123,\"\\u00e9\\n\"]}}",
+    "foreign_entry": "{\"draft_id\":\"CLOUD_OTHER\",\"draft_name\":\"别人的云草稿\",\"draft_fold_path\":\"${BASE}/drafts/CloudOther\",\"tm_draft_cloud_user_id\":7234567890123456789,\"tm_draft_cloud_entry_id\":7345678901234567891,\"tm_draft_cloud_space_id\":7012345678901234567,\"draft_timeline_materials_size\":1.0,\"tm_duration\":2500000.0,\"ratio\":0.1,\"tiny\":1e-07,\"huge\":1e+22,\"negative_zero\":-0.0,\"nested\":{\"10\":[1.0,-1],\"2\":{\"z\":null,\"a\":true}}}",
+    "untouched": "{\"keep\":[\"all\",\"original\",\"fields\"],\"written\":[2500000.0,100.0,0,12345678901234567890123,\"é\\n\"]}",
+    "created": {
+      "ok": true,
+      "status": "written",
+      "draft": {
+        "cloud_draft_cover": false,
+        "cloud_draft_sync": false,
+        "draft_cloud_last_action_download": false,
+        "draft_cloud_purchase_info": "",
+        "draft_cloud_template_id": "",
+        "draft_cloud_tutorial_info": "",
+        "draft_cloud_videocut_purchase_info": "",
+        "draft_cover": "",
+        "draft_fold_path": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE",
+        "draft_id": "870F8B67-3D2F-441C-BDE0-760C8529A2DE",
+        "draft_is_ai_shorts": false,
+        "draft_is_cloud_temp_draft": false,
+        "draft_is_infinite_canvas_draft": false,
+        "draft_is_invisible": false,
+        "draft_is_pippit_draft": false,
+        "draft_is_web_article_video": false,
+        "draft_json_file": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE/draft_content.json",
+        "draft_name": "原生草稿 Native",
+        "draft_new_version": "",
+        "draft_root_path": "${BASE}/drafts",
+        "draft_timeline_materials_size": 0,
+        "draft_type": "",
+        "draft_web_article_video_enter_from": "",
+        "pippit_avatar_url": "",
+        "pippit_extra_info": "",
+        "pippit_id": "",
+        "pippit_user_name": "",
+        "streaming_edit_draft_ready": true,
+        "tm_draft_cloud_completed": "",
+        "tm_draft_cloud_entry_id": -1,
+        "tm_draft_cloud_modified": 0,
+        "tm_draft_cloud_space_id": -1,
+        "tm_draft_cloud_user_id": -1,
+        "tm_draft_create": 1792396800000000,
+        "tm_draft_modified": 1792396800000000,
+        "tm_draft_parent_entry_id": -1,
+        "tm_draft_removed": 0,
+        "tm_duration": 3000000
+      },
+      "record": {
+        "cloud_draft_cover": false,
+        "cloud_draft_sync": false,
+        "draft_cloud_last_action_download": false,
+        "draft_cloud_purchase_info": "",
+        "draft_cloud_template_id": "",
+        "draft_cloud_tutorial_info": "",
+        "draft_cloud_videocut_purchase_info": "",
+        "draft_cover": "",
+        "draft_fold_path": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE",
+        "draft_id": "870F8B67-3D2F-441C-BDE0-760C8529A2DE",
+        "draft_is_ai_shorts": false,
+        "draft_is_cloud_temp_draft": false,
+        "draft_is_infinite_canvas_draft": false,
+        "draft_is_invisible": false,
+        "draft_is_pippit_draft": false,
+        "draft_is_web_article_video": false,
+        "draft_json_file": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE/draft_content.json",
+        "draft_name": "原生草稿 Native",
+        "draft_new_version": "",
+        "draft_root_path": "${BASE}/drafts",
+        "draft_timeline_materials_size": 0,
+        "draft_type": "",
+        "draft_web_article_video_enter_from": "",
+        "pippit_avatar_url": "",
+        "pippit_extra_info": "",
+        "pippit_id": "",
+        "pippit_user_name": "",
+        "streaming_edit_draft_ready": true,
+        "tm_draft_cloud_completed": "",
+        "tm_draft_cloud_entry_id": -1,
+        "tm_draft_cloud_modified": 0,
+        "tm_draft_cloud_space_id": -1,
+        "tm_draft_cloud_user_id": -1,
+        "tm_draft_create": 1792396800000000,
+        "tm_draft_modified": 1792396800000000,
+        "tm_draft_parent_entry_id": -1,
+        "tm_draft_removed": 0,
+        "tm_duration": 3000000
+      },
+      "id": "870F8B67-3D2F-441C-BDE0-760C8529A2DE",
+      "name": "原生草稿 Native",
+      "path": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE",
+      "source": "jianying_index",
+      "read_only": false,
+      "jianying_ui_verified": false,
+      "verification": {
+        "files_and_index_written": true,
+        "jianying_ui_verified": false,
+        "note": "Generated JSON files and the index entry were written; Jianying UI compatibility was not verified."
+      }
+    },
+    "index_raw_after_create": "{\"root_path\":\"${BASE}/index\",\"all_draft_store\":[{\"draft_id\":\"CLOUD_OTHER\",\"draft_name\":\"别人的云草稿\",\"draft_fold_path\":\"${BASE}/drafts/CloudOther\",\"tm_draft_cloud_user_id\":7234567890123456789,\"tm_draft_cloud_entry_id\":7345678901234567891,\"tm_draft_cloud_space_id\":7012345678901234567,\"draft_timeline_materials_size\":1.0,\"tm_duration\":2500000.0,\"ratio\":0.1,\"tiny\":1e-07,\"huge\":1e+22,\"negative_zero\":-0.0,\"nested\":{\"10\":[1.0,-1],\"2\":{\"z\":null,\"a\":true}}},{\"cloud_draft_cover\":false,\"cloud_draft_sync\":false,\"draft_cloud_last_action_download\":false,\"draft_cloud_purchase_info\":\"\",\"draft_cloud_template_id\":\"\",\"draft_cloud_tutorial_info\":\"\",\"draft_cloud_videocut_purchase_info\":\"\",\"draft_cover\":\"\",\"draft_fold_path\":\"${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE\",\"draft_id\":\"870F8B67-3D2F-441C-BDE0-760C8529A2DE\",\"draft_is_ai_shorts\":false,\"draft_is_cloud_temp_draft\":false,\"draft_is_infinite_canvas_draft\":false,\"draft_is_invisible\":false,\"draft_is_pippit_draft\":false,\"draft_is_web_article_video\":false,\"draft_json_file\":\"${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE/draft_content.json\",\"draft_name\":\"原生草稿 Native\",\"draft_new_version\":\"\",\"draft_root_path\":\"${BASE}/drafts\",\"draft_timeline_materials_size\":0,\"draft_type\":\"\",\"draft_web_article_video_enter_from\":\"\",\"pippit_avatar_url\":\"\",\"pippit_extra_info\":\"\",\"pippit_id\":\"\",\"pippit_user_name\":\"\",\"streaming_edit_draft_ready\":true,\"tm_draft_cloud_completed\":\"\",\"tm_draft_cloud_entry_id\":-1,\"tm_draft_cloud_modified\":0,\"tm_draft_cloud_space_id\":-1,\"tm_draft_cloud_user_id\":-1,\"tm_draft_create\":1792396800000000,\"tm_draft_modified\":1792396800000000,\"tm_draft_parent_entry_id\":-1,\"tm_draft_removed\":0,\"tm_duration\":3000000}],\"draft_ids\":0,\"untouched\":{\"keep\":[\"all\",\"original\",\"fields\"],\"written\":[2500000.0,100.0,0,12345678901234567890123,\"é\\n\"]}}",
+    "index_after_create": {
+      "root_path": "${BASE}/index",
+      "all_draft_store": [
+        {
+          "draft_id": "CLOUD_OTHER",
+          "draft_name": "别人的云草稿",
+          "draft_fold_path": "${BASE}/drafts/CloudOther",
+          "tm_draft_cloud_user_id": 7234567890123456789,
+          "tm_draft_cloud_entry_id": 7345678901234567891,
+          "tm_draft_cloud_space_id": 7012345678901234567,
+          "draft_timeline_materials_size": 1.0,
+          "tm_duration": 2500000.0,
+          "ratio": 0.1,
+          "tiny": 1e-07,
+          "huge": 1e+22,
+          "negative_zero": -0.0,
+          "nested": {
+            "10": [
+              1.0,
+              -1
+            ],
+            "2": {
+              "z": null,
+              "a": true
+            }
+          }
+        },
+        {
+          "cloud_draft_cover": false,
+          "cloud_draft_sync": false,
+          "draft_cloud_last_action_download": false,
+          "draft_cloud_purchase_info": "",
+          "draft_cloud_template_id": "",
+          "draft_cloud_tutorial_info": "",
+          "draft_cloud_videocut_purchase_info": "",
+          "draft_cover": "",
+          "draft_fold_path": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE",
+          "draft_id": "870F8B67-3D2F-441C-BDE0-760C8529A2DE",
+          "draft_is_ai_shorts": false,
+          "draft_is_cloud_temp_draft": false,
+          "draft_is_infinite_canvas_draft": false,
+          "draft_is_invisible": false,
+          "draft_is_pippit_draft": false,
+          "draft_is_web_article_video": false,
+          "draft_json_file": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE/draft_content.json",
+          "draft_name": "原生草稿 Native",
+          "draft_new_version": "",
+          "draft_root_path": "${BASE}/drafts",
+          "draft_timeline_materials_size": 0,
+          "draft_type": "",
+          "draft_web_article_video_enter_from": "",
+          "pippit_avatar_url": "",
+          "pippit_extra_info": "",
+          "pippit_id": "",
+          "pippit_user_name": "",
+          "streaming_edit_draft_ready": true,
+          "tm_draft_cloud_completed": "",
+          "tm_draft_cloud_entry_id": -1,
+          "tm_draft_cloud_modified": 0,
+          "tm_draft_cloud_space_id": -1,
+          "tm_draft_cloud_user_id": -1,
+          "tm_draft_create": 1792396800000000,
+          "tm_draft_modified": 1792396800000000,
+          "tm_draft_parent_entry_id": -1,
+          "tm_draft_removed": 0,
+          "tm_duration": 3000000
+        }
+      ],
+      "draft_ids": 0,
+      "untouched": {
+        "keep": [
+          "all",
+          "original",
+          "fields"
+        ],
+        "written": [
+          2500000.0,
+          100.0,
+          0,
+          12345678901234567890123,
+          "é\n"
+        ]
+      }
+    },
+    "meta_after_create": {
+      "draft_id": "870F8B67-3D2F-441C-BDE0-760C8529A2DE",
+      "draft_name": "原生草稿 Native",
+      "draft_fold_path": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE",
+      "draft_root_path": "${BASE}/drafts",
+      "draft_timeline_materials_size_": 318486,
+      "tm_draft_create": 1792396800000000,
+      "tm_draft_modified": 1792396800000000,
+      "tm_duration": 3000000
+    },
+    "owner": {
+      "draft_id": "870F8B67-3D2F-441C-BDE0-760C8529A2DE",
+      "project_id": "00000000000000000000000000000001",
+      "generator": "jianying-ai-service"
+    },
+    "files_after_create": [
+      ".jianying_ai_owned.json",
+      ".owned",
+      "draft_content.json",
+      "draft_meta_info.json",
+      "project.json"
+    ],
+    "repaired": {
+      "ok": true,
+      "status": "repaired",
+      "draft": {
+        "cloud_draft_cover": false,
+        "cloud_draft_sync": false,
+        "draft_cloud_last_action_download": false,
+        "draft_cloud_purchase_info": "",
+        "draft_cloud_template_id": "",
+        "draft_cloud_tutorial_info": "",
+        "draft_cloud_videocut_purchase_info": "",
+        "draft_cover": "",
+        "draft_fold_path": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE",
+        "draft_id": "870F8B67-3D2F-441C-BDE0-760C8529A2DE",
+        "draft_is_ai_shorts": false,
+        "draft_is_cloud_temp_draft": false,
+        "draft_is_infinite_canvas_draft": false,
+        "draft_is_invisible": false,
+        "draft_is_pippit_draft": false,
+        "draft_is_web_article_video": false,
+        "draft_json_file": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE/draft_content.json",
+        "draft_name": "修复后的草稿 Repaired",
+        "draft_new_version": "",
+        "draft_root_path": "${BASE}/drafts",
+        "draft_timeline_materials_size": 0,
+        "draft_type": "",
+        "draft_web_article_video_enter_from": "",
+        "pippit_avatar_url": "",
+        "pippit_extra_info": "",
+        "pippit_id": "",
+        "pippit_user_name": "",
+        "streaming_edit_draft_ready": true,
+        "tm_draft_cloud_completed": "",
+        "tm_draft_cloud_entry_id": -1,
+        "tm_draft_cloud_modified": 0,
+        "tm_draft_cloud_space_id": -1,
+        "tm_draft_cloud_user_id": -1,
+        "tm_draft_create": 1792396800000000,
+        "tm_draft_modified": 1792396800000000,
+        "tm_draft_parent_entry_id": -1,
+        "tm_draft_removed": 0,
+        "tm_duration": 3000000
+      },
+      "record": {
+        "cloud_draft_cover": false,
+        "cloud_draft_sync": false,
+        "draft_cloud_last_action_download": false,
+        "draft_cloud_purchase_info": "",
+        "draft_cloud_template_id": "",
+        "draft_cloud_tutorial_info": "",
+        "draft_cloud_videocut_purchase_info": "",
+        "draft_cover": "",
+        "draft_fold_path": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE",
+        "draft_id": "870F8B67-3D2F-441C-BDE0-760C8529A2DE",
+        "draft_is_ai_shorts": false,
+        "draft_is_cloud_temp_draft": false,
+        "draft_is_infinite_canvas_draft": false,
+        "draft_is_invisible": false,
+        "draft_is_pippit_draft": false,
+        "draft_is_web_article_video": false,
+        "draft_json_file": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE/draft_content.json",
+        "draft_name": "修复后的草稿 Repaired",
+        "draft_new_version": "",
+        "draft_root_path": "${BASE}/drafts",
+        "draft_timeline_materials_size": 0,
+        "draft_type": "",
+        "draft_web_article_video_enter_from": "",
+        "pippit_avatar_url": "",
+        "pippit_extra_info": "",
+        "pippit_id": "",
+        "pippit_user_name": "",
+        "streaming_edit_draft_ready": true,
+        "tm_draft_cloud_completed": "",
+        "tm_draft_cloud_entry_id": -1,
+        "tm_draft_cloud_modified": 0,
+        "tm_draft_cloud_space_id": -1,
+        "tm_draft_cloud_user_id": -1,
+        "tm_draft_create": 1792396800000000,
+        "tm_draft_modified": 1792396800000000,
+        "tm_draft_parent_entry_id": -1,
+        "tm_draft_removed": 0,
+        "tm_duration": 3000000
+      },
+      "id": "870F8B67-3D2F-441C-BDE0-760C8529A2DE",
+      "name": "修复后的草稿 Repaired",
+      "path": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE",
+      "source": "jianying_index",
+      "read_only": false,
+      "jianying_ui_verified": false,
+      "verification": {
+        "files_and_index_written": true,
+        "draft_id_preserved": true,
+        "draft_path_preserved": true,
+        "main_timeline_updated": true,
+        "main_timeline_path": "Timelines/4D2B6B0E-1C3A-4F5B-9D7E-2A1B3C4D5E6F/draft_content.json",
+        "jianying_ui_verified": false,
+        "note": "The service-owned draft was rebuilt and replaced in place; Jianying UI compatibility was not verified."
+      }
+    },
+    "index_raw_after_repair": "{\"root_path\":\"${BASE}/index\",\"all_draft_store\":[{\"draft_id\":\"CLOUD_OTHER\",\"draft_name\":\"别人的云草稿\",\"draft_fold_path\":\"${BASE}/drafts/CloudOther\",\"tm_draft_cloud_user_id\":7234567890123456789,\"tm_draft_cloud_entry_id\":7345678901234567891,\"tm_draft_cloud_space_id\":7012345678901234567,\"draft_timeline_materials_size\":1.0,\"tm_duration\":2500000.0,\"ratio\":0.1,\"tiny\":1e-07,\"huge\":1e+22,\"negative_zero\":-0.0,\"nested\":{\"10\":[1.0,-1],\"2\":{\"z\":null,\"a\":true}}},{\"cloud_draft_cover\":false,\"cloud_draft_sync\":false,\"draft_cloud_last_action_download\":false,\"draft_cloud_purchase_info\":\"\",\"draft_cloud_template_id\":\"\",\"draft_cloud_tutorial_info\":\"\",\"draft_cloud_videocut_purchase_info\":\"\",\"draft_cover\":\"\",\"draft_fold_path\":\"${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE\",\"draft_id\":\"870F8B67-3D2F-441C-BDE0-760C8529A2DE\",\"draft_is_ai_shorts\":false,\"draft_is_cloud_temp_draft\":false,\"draft_is_infinite_canvas_draft\":false,\"draft_is_invisible\":false,\"draft_is_pippit_draft\":false,\"draft_is_web_article_video\":false,\"draft_json_file\":\"${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE/draft_content.json\",\"draft_name\":\"修复后的草稿 Repaired\",\"draft_new_version\":\"\",\"draft_root_path\":\"${BASE}/drafts\",\"draft_timeline_materials_size\":0,\"draft_type\":\"\",\"draft_web_article_video_enter_from\":\"\",\"pippit_avatar_url\":\"\",\"pippit_extra_info\":\"\",\"pippit_id\":\"\",\"pippit_user_name\":\"\",\"streaming_edit_draft_ready\":true,\"tm_draft_cloud_completed\":\"\",\"tm_draft_cloud_entry_id\":-1,\"tm_draft_cloud_modified\":0,\"tm_draft_cloud_space_id\":-1,\"tm_draft_cloud_user_id\":-1,\"tm_draft_create\":1792396800000000,\"tm_draft_modified\":1792396800000000,\"tm_draft_parent_entry_id\":-1,\"tm_draft_removed\":0,\"tm_duration\":3000000}],\"draft_ids\":0,\"untouched\":{\"keep\":[\"all\",\"original\",\"fields\"],\"written\":[2500000.0,100.0,0,12345678901234567890123,\"é\\n\"]}}",
+    "index_after_repair": {
+      "root_path": "${BASE}/index",
+      "all_draft_store": [
+        {
+          "draft_id": "CLOUD_OTHER",
+          "draft_name": "别人的云草稿",
+          "draft_fold_path": "${BASE}/drafts/CloudOther",
+          "tm_draft_cloud_user_id": 7234567890123456789,
+          "tm_draft_cloud_entry_id": 7345678901234567891,
+          "tm_draft_cloud_space_id": 7012345678901234567,
+          "draft_timeline_materials_size": 1.0,
+          "tm_duration": 2500000.0,
+          "ratio": 0.1,
+          "tiny": 1e-07,
+          "huge": 1e+22,
+          "negative_zero": -0.0,
+          "nested": {
+            "10": [
+              1.0,
+              -1
+            ],
+            "2": {
+              "z": null,
+              "a": true
+            }
+          }
+        },
+        {
+          "cloud_draft_cover": false,
+          "cloud_draft_sync": false,
+          "draft_cloud_last_action_download": false,
+          "draft_cloud_purchase_info": "",
+          "draft_cloud_template_id": "",
+          "draft_cloud_tutorial_info": "",
+          "draft_cloud_videocut_purchase_info": "",
+          "draft_cover": "",
+          "draft_fold_path": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE",
+          "draft_id": "870F8B67-3D2F-441C-BDE0-760C8529A2DE",
+          "draft_is_ai_shorts": false,
+          "draft_is_cloud_temp_draft": false,
+          "draft_is_infinite_canvas_draft": false,
+          "draft_is_invisible": false,
+          "draft_is_pippit_draft": false,
+          "draft_is_web_article_video": false,
+          "draft_json_file": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE/draft_content.json",
+          "draft_name": "修复后的草稿 Repaired",
+          "draft_new_version": "",
+          "draft_root_path": "${BASE}/drafts",
+          "draft_timeline_materials_size": 0,
+          "draft_type": "",
+          "draft_web_article_video_enter_from": "",
+          "pippit_avatar_url": "",
+          "pippit_extra_info": "",
+          "pippit_id": "",
+          "pippit_user_name": "",
+          "streaming_edit_draft_ready": true,
+          "tm_draft_cloud_completed": "",
+          "tm_draft_cloud_entry_id": -1,
+          "tm_draft_cloud_modified": 0,
+          "tm_draft_cloud_space_id": -1,
+          "tm_draft_cloud_user_id": -1,
+          "tm_draft_create": 1792396800000000,
+          "tm_draft_modified": 1792396800000000,
+          "tm_draft_parent_entry_id": -1,
+          "tm_draft_removed": 0,
+          "tm_duration": 3000000
+        }
+      ],
+      "draft_ids": 0,
+      "untouched": {
+        "keep": [
+          "all",
+          "original",
+          "fields"
+        ],
+        "written": [
+          2500000.0,
+          100.0,
+          0,
+          12345678901234567890123,
+          "é\n"
+        ]
+      }
+    },
+    "meta_after_repair": {
+      "draft_id": "870F8B67-3D2F-441C-BDE0-760C8529A2DE",
+      "draft_name": "修复后的草稿 Repaired",
+      "draft_fold_path": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE",
+      "draft_root_path": "${BASE}/drafts",
+      "draft_timeline_materials_size_": 318486,
+      "tm_draft_create": 1792396800000000,
+      "tm_draft_modified": 1792396800000000,
+      "tm_duration": 3000000
+    },
+    "files_after_repair": [
+      ".jianying_ai_owned.json",
+      ".owned",
+      "Timelines",
+      "Timelines/.jianying_ai_repair_backups",
+      "Timelines/.jianying_ai_repair_backups/${TOKEN}",
+      "Timelines/.jianying_ai_repair_backups/${TOKEN}/draft_content.json",
+      "Timelines/.jianying_ai_repair_backups/${TOKEN}/draft_content.json.bak",
+      "Timelines/.jianying_ai_repair_backups/${TOKEN}/project.json",
+      "Timelines/4D2B6B0E-1C3A-4F5B-9D7E-2A1B3C4D5E6F",
+      "Timelines/4D2B6B0E-1C3A-4F5B-9D7E-2A1B3C4D5E6F/draft_content.json",
+      "Timelines/4D2B6B0E-1C3A-4F5B-9D7E-2A1B3C4D5E6F/draft_content.json.bak",
+      "Timelines/project.json",
+      "custom-extra.bin",
+      "draft_content.json",
+      "draft_meta_info.json",
+      "project.json"
+    ],
+    "timeline_matches_content": true,
+    "timeline_backup_matches_main": true,
+    "root_entries_after_repair": [
+      "870F8B673D2F441CBDE0760C8529A2DE"
+    ]
+  },
+  "status": {
+    "result": {
+      "ok": true,
+      "status": "available",
+      "read_only": false,
+      "draft_count": 14,
+      "skipped_count": 17,
+      "index_source": "jianying_index",
+      "drafts_root_source": "environment",
+      "timeline_content": "unsupported_encrypted",
+      "operations": {
+        "status": "available",
+        "list": "available",
+        "get": "available",
+        "create": "available",
+        "repair": "owned_draft_only",
+        "edit": "unsupported_encrypted",
+        "delete": "unsupported",
+        "write_support": "create_and_repair_owned",
+        "open": "unsupported",
+        "export_video": "unsupported"
+      }
+    }
+  },
+  "status_missing_index": {
+    "result": {
+      "ok": true,
+      "status": "unavailable",
+      "reason": "index_not_found",
+      "read_only": true,
+      "timeline_content": "unsupported_encrypted"
+    }
+  },
+  "lists": [
+    {
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "id": "MS_TIME",
+            "name": "Millisecond times",
+            "path": "${BASE}/drafts/MsTime",
+            "created_at": "2023-11-15T06:13:20.123000+08:00",
+            "modified_at": "5138-11-16T17:46:39.998993+08:00",
+            "duration_us": 3,
+            "material_size_bytes": 7,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          },
+          {
+            "id": "ISO_FRACTION",
+            "name": "Iso fraction",
+            "path": "${BASE}/drafts/IsoFraction",
+            "created_at": "2026-10-19T15:26:26.722043+08:00",
+            "modified_at": "2026-10-19T09:04:42.500000+08:00",
+            "duration_us": null,
+            "material_size_bytes": null,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          },
+          {
+            "id": "ISO_SPACE",
+            "name": "Iso space",
+            "path": "${BASE}/drafts/IsoSpace",
+            "created_at": "2026-10-18T00:00:00+08:00",
+            "modified_at": "2026-10-18T22:34:42+08:00",
+            "duration_us": null,
+            "material_size_bytes": null,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          },
+          {
+            "id": "ISO_ZULU",
+            "name": "Iso zulu",
+            "path": "${BASE}/drafts/IsoZulu",
+            "created_at": null,
+            "modified_at": "2026-10-18T22:34:42+08:00",
+            "duration_us": null,
+            "material_size_bytes": null,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          },
+          {
+            "id": "CASEFOLD",
+            "name": "ΟΔΟΣ Straße ﬁle ᾈ Ꭰ",
+            "path": "${BASE}/drafts/Casefold",
+            "created_at": "2026-10-12T00:00:00+08:00",
+            "modified_at": "2026-10-18T10:29:29.500000+08:00",
+            "duration_us": null,
+            "material_size_bytes": null,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          },
+          {
+            "id": "DRAFT_C",
+            "name": "Gamma",
+            "path": "${BASE}/drafts/Gamma",
+            "created_at": "2023-11-15T06:13:21+08:00",
+            "modified_at": "2023-11-15T06:13:23+08:00",
+            "duration_us": 0,
+            "material_size_bytes": 0,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          },
+          {
+            "id": "DRAFT_A",
+            "name": "Alpha",
+            "path": "${BASE}/drafts/Alpha",
+            "created_at": "2023-11-15T06:13:20+08:00",
+            "modified_at": "2023-11-15T06:13:22+08:00",
+            "duration_us": 2500000,
+            "material_size_bytes": 4096,
+            "files_present": {
+              "draft_content.json": true,
+              "draft_meta_info.json": true
+            },
+            "source": "jianying_index",
+            "read_only": true
+          },
+          {
+            "id": "DRAFT_B",
+            "name": "Beta",
+            "path": "${BASE}/drafts/Beta",
+            "created_at": "2023-11-15T06:13:20+08:00",
+            "modified_at": "2023-11-15T06:13:22+08:00",
+            "duration_us": 1000000,
+            "material_size_bytes": 1024,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": true
+            },
+            "source": "jianying_index",
+            "read_only": true
+          },
+          {
+            "id": "NESTED",
+            "name": "Nested",
+            "path": "${BASE}/drafts/Nested/Inner",
+            "created_at": null,
+            "modified_at": "2023-11-15T06:13:22+08:00",
+            "duration_us": null,
+            "material_size_bytes": null,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          },
+          {
+            "id": "NO_ROOT",
+            "name": "No root",
+            "path": "${BASE}/drafts/NoRoot",
+            "created_at": null,
+            "modified_at": "2023-11-15T06:13:22+08:00",
+            "duration_us": null,
+            "material_size_bytes": null,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          },
+          {
+            "id": "UNICODE_1",
+            "name": "草稿 Ünïcode",
+            "path": "${BASE}/drafts/Unicode 草稿",
+            "created_at": null,
+            "modified_at": "2023-11-15T06:13:22+08:00",
+            "duration_us": null,
+            "material_size_bytes": null,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          },
+          {
+            "id": "DOTTED",
+            "name": "Dotted path",
+            "path": "${BASE}/drafts/Beta",
+            "created_at": null,
+            "modified_at": "2020-09-13T20:26:40+08:00",
+            "duration_us": null,
+            "material_size_bytes": null,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": true
+            },
+            "source": "jianying_index",
+            "read_only": true
+          },
+          {
+            "id": "FLOAT_VALUES",
+            "name": "Float values",
+            "path": "${BASE}/drafts/FloatValues",
+            "created_at": "2023-11-15T06:13:20.500000+08:00",
+            "modified_at": null,
+            "duration_us": null,
+            "material_size_bytes": 1048576,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          },
+          {
+            "id": "ISO_BAD",
+            "name": "Iso bad",
+            "path": "${BASE}/drafts/IsoBad",
+            "created_at": null,
+            "modified_at": null,
+            "duration_us": null,
+            "material_size_bytes": null,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          }
+        ],
+        "total": 14,
+        "limit": 50,
+        "offset": 0,
+        "query": "",
+        "index": {
+          "source": "jianying_index",
+          "draft_count": 14,
+          "skipped_count": 17
+        }
+      }
+    },
+    {
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "id": "ISO_FRACTION",
+            "name": "Iso fraction",
+            "path": "${BASE}/drafts/IsoFraction",
+            "created_at": "2026-10-19T15:26:26.722043+08:00",
+            "modified_at": "2026-10-19T09:04:42.500000+08:00",
+            "duration_us": null,
+            "material_size_bytes": null,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          },
+          {
+            "id": "ISO_SPACE",
+            "name": "Iso space",
+            "path": "${BASE}/drafts/IsoSpace",
+            "created_at": "2026-10-18T00:00:00+08:00",
+            "modified_at": "2026-10-18T22:34:42+08:00",
+            "duration_us": null,
+            "material_size_bytes": null,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          }
+        ],
+        "total": 14,
+        "limit": 2,
+        "offset": 1,
+        "query": "",
+        "index": {
+          "source": "jianying_index",
+          "draft_count": 14,
+          "skipped_count": 17
+        }
+      }
+    },
+    {
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "id": "DRAFT_A",
+            "name": "Alpha",
+            "path": "${BASE}/drafts/Alpha",
+            "created_at": "2023-11-15T06:13:20+08:00",
+            "modified_at": "2023-11-15T06:13:22+08:00",
+            "duration_us": 2500000,
+            "material_size_bytes": 4096,
+            "files_present": {
+              "draft_content.json": true,
+              "draft_meta_info.json": true
+            },
+            "source": "jianying_index",
+            "read_only": true
+          }
+        ],
+        "total": 1,
+        "limit": 50,
+        "offset": 0,
+        "query": "alpha",
+        "index": {
+          "source": "jianying_index",
+          "draft_count": 14,
+          "skipped_count": 17
+        }
+      }
+    },
+    {
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "id": "DRAFT_C",
+            "name": "Gamma",
+            "path": "${BASE}/drafts/Gamma",
+            "created_at": "2023-11-15T06:13:21+08:00",
+            "modified_at": "2023-11-15T06:13:23+08:00",
+            "duration_us": 0,
+            "material_size_bytes": 0,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          },
+          {
+            "id": "DRAFT_A",
+            "name": "Alpha",
+            "path": "${BASE}/drafts/Alpha",
+            "created_at": "2023-11-15T06:13:20+08:00",
+            "modified_at": "2023-11-15T06:13:22+08:00",
+            "duration_us": 2500000,
+            "material_size_bytes": 4096,
+            "files_present": {
+              "draft_content.json": true,
+              "draft_meta_info.json": true
+            },
+            "source": "jianying_index",
+            "read_only": true
+          },
+          {
+            "id": "DRAFT_B",
+            "name": "Beta",
+            "path": "${BASE}/drafts/Beta",
+            "created_at": "2023-11-15T06:13:20+08:00",
+            "modified_at": "2023-11-15T06:13:22+08:00",
+            "duration_us": 1000000,
+            "material_size_bytes": 1024,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": true
+            },
+            "source": "jianying_index",
+            "read_only": true
+          }
+        ],
+        "total": 3,
+        "limit": 50,
+        "offset": 0,
+        "query": "DRAFT_",
+        "index": {
+          "source": "jianying_index",
+          "draft_count": 14,
+          "skipped_count": 17
+        }
+      }
+    },
+    {
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "id": "UNICODE_1",
+            "name": "草稿 Ünïcode",
+            "path": "${BASE}/drafts/Unicode 草稿",
+            "created_at": null,
+            "modified_at": "2023-11-15T06:13:22+08:00",
+            "duration_us": null,
+            "material_size_bytes": null,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          }
+        ],
+        "total": 1,
+        "limit": 50,
+        "offset": 0,
+        "query": "草稿",
+        "index": {
+          "source": "jianying_index",
+          "draft_count": 14,
+          "skipped_count": 17
+        }
+      }
+    },
+    {
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "id": "UNICODE_1",
+            "name": "草稿 Ünïcode",
+            "path": "${BASE}/drafts/Unicode 草稿",
+            "created_at": null,
+            "modified_at": "2023-11-15T06:13:22+08:00",
+            "duration_us": null,
+            "material_size_bytes": null,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          }
+        ],
+        "total": 1,
+        "limit": 50,
+        "offset": 0,
+        "query": "ünï",
+        "index": {
+          "source": "jianying_index",
+          "draft_count": 14,
+          "skipped_count": 17
+        }
+      }
+    },
+    {
+      "result": {
+        "ok": true,
+        "items": [],
+        "total": 14,
+        "limit": 200,
+        "offset": 10000,
+        "query": "",
+        "index": {
+          "source": "jianying_index",
+          "draft_count": 14,
+          "skipped_count": 17
+        }
+      }
+    },
+    {
+      "error": {
+        "code": "DRAFT_BOX_PAGINATION_INVALID",
+        "status": 422
+      }
+    },
+    {
+      "error": {
+        "code": "DRAFT_BOX_PAGINATION_INVALID",
+        "status": 422
+      }
+    },
+    {
+      "error": {
+        "code": "DRAFT_BOX_PAGINATION_INVALID",
+        "status": 422
+      }
+    },
+    {
+      "error": {
+        "code": "DRAFT_BOX_PAGINATION_INVALID",
+        "status": 422
+      }
+    },
+    {
+      "error": {
+        "code": "DRAFT_BOX_QUERY_INVALID",
+        "status": 422
+      }
+    },
+    {
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "id": "CASEFOLD",
+            "name": "ΟΔΟΣ Straße ﬁle ᾈ Ꭰ",
+            "path": "${BASE}/drafts/Casefold",
+            "created_at": "2026-10-12T00:00:00+08:00",
+            "modified_at": "2026-10-18T10:29:29.500000+08:00",
+            "duration_us": null,
+            "material_size_bytes": null,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          }
+        ],
+        "total": 1,
+        "limit": 50,
+        "offset": 0,
+        "query": "οδοσ",
+        "index": {
+          "source": "jianying_index",
+          "draft_count": 14,
+          "skipped_count": 17
+        }
+      }
+    },
+    {
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "id": "CASEFOLD",
+            "name": "ΟΔΟΣ Straße ﬁle ᾈ Ꭰ",
+            "path": "${BASE}/drafts/Casefold",
+            "created_at": "2026-10-12T00:00:00+08:00",
+            "modified_at": "2026-10-18T10:29:29.500000+08:00",
+            "duration_us": null,
+            "material_size_bytes": null,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          }
+        ],
+        "total": 1,
+        "limit": 50,
+        "offset": 0,
+        "query": "ΟΔΟΣ",
+        "index": {
+          "source": "jianying_index",
+          "draft_count": 14,
+          "skipped_count": 17
+        }
+      }
+    },
+    {
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "id": "CASEFOLD",
+            "name": "ΟΔΟΣ Straße ﬁle ᾈ Ꭰ",
+            "path": "${BASE}/drafts/Casefold",
+            "created_at": "2026-10-12T00:00:00+08:00",
+            "modified_at": "2026-10-18T10:29:29.500000+08:00",
+            "duration_us": null,
+            "material_size_bytes": null,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          }
+        ],
+        "total": 1,
+        "limit": 50,
+        "offset": 0,
+        "query": "STRASSE",
+        "index": {
+          "source": "jianying_index",
+          "draft_count": 14,
+          "skipped_count": 17
+        }
+      }
+    },
+    {
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "id": "CASEFOLD",
+            "name": "ΟΔΟΣ Straße ﬁle ᾈ Ꭰ",
+            "path": "${BASE}/drafts/Casefold",
+            "created_at": "2026-10-12T00:00:00+08:00",
+            "modified_at": "2026-10-18T10:29:29.500000+08:00",
+            "duration_us": null,
+            "material_size_bytes": null,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          }
+        ],
+        "total": 1,
+        "limit": 50,
+        "offset": 0,
+        "query": "FILE",
+        "index": {
+          "source": "jianying_index",
+          "draft_count": 14,
+          "skipped_count": 17
+        }
+      }
+    },
+    {
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "id": "CASEFOLD",
+            "name": "ΟΔΟΣ Straße ﬁle ᾈ Ꭰ",
+            "path": "${BASE}/drafts/Casefold",
+            "created_at": "2026-10-12T00:00:00+08:00",
+            "modified_at": "2026-10-18T10:29:29.500000+08:00",
+            "duration_us": null,
+            "material_size_bytes": null,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          }
+        ],
+        "total": 1,
+        "limit": 50,
+        "offset": 0,
+        "query": "ἀι",
+        "index": {
+          "source": "jianying_index",
+          "draft_count": 14,
+          "skipped_count": 17
+        }
+      }
+    },
+    {
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "id": "CASEFOLD",
+            "name": "ΟΔΟΣ Straße ﬁle ᾈ Ꭰ",
+            "path": "${BASE}/drafts/Casefold",
+            "created_at": "2026-10-12T00:00:00+08:00",
+            "modified_at": "2026-10-18T10:29:29.500000+08:00",
+            "duration_us": null,
+            "material_size_bytes": null,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          }
+        ],
+        "total": 1,
+        "limit": 50,
+        "offset": 0,
+        "query": "ꭰ",
+        "index": {
+          "source": "jianying_index",
+          "draft_count": 14,
+          "skipped_count": 17
+        }
+      }
+    },
+    {
+      "result": {
+        "ok": true,
+        "items": [],
+        "total": 0,
+        "limit": 50,
+        "offset": 0,
+        "query": "ı",
+        "index": {
+          "source": "jianying_index",
+          "draft_count": 14,
+          "skipped_count": 17
+        }
+      }
+    },
+    {
+      "result": {
+        "ok": true,
+        "items": [
+          {
+            "id": "CASEFOLD",
+            "name": "ΟΔΟΣ Straße ﬁle ᾈ Ꭰ",
+            "path": "${BASE}/drafts/Casefold",
+            "created_at": "2026-10-12T00:00:00+08:00",
+            "modified_at": "2026-10-18T10:29:29.500000+08:00",
+            "duration_us": null,
+            "material_size_bytes": null,
+            "files_present": {
+              "draft_content.json": false,
+              "draft_meta_info.json": false
+            },
+            "source": "jianying_index",
+            "read_only": true
+          }
+        ],
+        "total": 1,
+        "limit": 50,
+        "offset": 0,
+        "query": "casefold",
+        "index": {
+          "source": "jianying_index",
+          "draft_count": 14,
+          "skipped_count": 17
+        }
+      }
+    }
+  ],
+  "gets": [
+    {
+      "result": {
+        "ok": true,
+        "draft": {
+          "id": "DRAFT_A",
+          "name": "Alpha",
+          "path": "${BASE}/drafts/Alpha",
+          "created_at": "2023-11-15T06:13:20+08:00",
+          "modified_at": "2023-11-15T06:13:22+08:00",
+          "duration_us": 2500000,
+          "material_size_bytes": 4096,
+          "files_present": {
+            "draft_content.json": true,
+            "draft_meta_info.json": true
+          },
+          "source": "jianying_index",
+          "read_only": true,
+          "index": {
+            "source": "jianying_index",
+            "draft_count": 14,
+            "skipped_count": 17
+          },
+          "timeline_content": {
+            "status": "unsupported",
+            "reason": "encrypted"
+          }
+        }
+      }
+    },
+    {
+      "result": {
+        "ok": true,
+        "draft": {
+          "id": "DRAFT_C",
+          "name": "Gamma",
+          "path": "${BASE}/drafts/Gamma",
+          "created_at": "2023-11-15T06:13:21+08:00",
+          "modified_at": "2023-11-15T06:13:23+08:00",
+          "duration_us": 0,
+          "material_size_bytes": 0,
+          "files_present": {
+            "draft_content.json": false,
+            "draft_meta_info.json": false
+          },
+          "source": "jianying_index",
+          "read_only": true,
+          "index": {
+            "source": "jianying_index",
+            "draft_count": 14,
+            "skipped_count": 17
+          },
+          "timeline_content": {
+            "status": "unsupported",
+            "reason": "encrypted"
+          }
+        }
+      }
+    },
+    {
+      "result": {
+        "ok": true,
+        "draft": {
+          "id": "MS_TIME",
+          "name": "Millisecond times",
+          "path": "${BASE}/drafts/MsTime",
+          "created_at": "2023-11-15T06:13:20.123000+08:00",
+          "modified_at": "5138-11-16T17:46:39.998993+08:00",
+          "duration_us": 3,
+          "material_size_bytes": 7,
+          "files_present": {
+            "draft_content.json": false,
+            "draft_meta_info.json": false
+          },
+          "source": "jianying_index",
+          "read_only": true,
+          "index": {
+            "source": "jianying_index",
+            "draft_count": 14,
+            "skipped_count": 17
+          },
+          "timeline_content": {
+            "status": "unsupported",
+            "reason": "encrypted"
+          }
+        }
+      }
+    },
+    {
+      "result": {
+        "ok": true,
+        "draft": {
+          "id": "UNICODE_1",
+          "name": "草稿 Ünïcode",
+          "path": "${BASE}/drafts/Unicode 草稿",
+          "created_at": null,
+          "modified_at": "2023-11-15T06:13:22+08:00",
+          "duration_us": null,
+          "material_size_bytes": null,
+          "files_present": {
+            "draft_content.json": false,
+            "draft_meta_info.json": false
+          },
+          "source": "jianying_index",
+          "read_only": true,
+          "index": {
+            "source": "jianying_index",
+            "draft_count": 14,
+            "skipped_count": 17
+          },
+          "timeline_content": {
+            "status": "unsupported",
+            "reason": "encrypted"
+          }
+        }
+      }
+    },
+    {
+      "error": {
+        "code": "DRAFT_BOX_NOT_FOUND",
+        "status": 404
+      }
+    },
+    {
+      "error": {
+        "code": "DRAFT_BOX_NOT_FOUND",
+        "status": 404
+      }
+    },
+    {
+      "error": {
+        "code": "DRAFT_BOX_NOT_FOUND",
+        "status": 404
+      }
+    },
+    {
+      "error": {
+        "code": "DRAFT_BOX_INVALID_ID",
+        "status": 422
+      }
+    },
+    {
+      "error": {
+        "code": "DRAFT_BOX_INVALID_ID",
+        "status": 422
+      }
+    },
+    {
+      "error": {
+        "code": "DRAFT_BOX_INVALID_ID",
+        "status": 422
+      }
+    },
+    {
+      "error": {
+        "code": "DRAFT_BOX_INVALID_ID",
+        "status": 422
+      }
+    }
+  ],
+  "timestamps": [
+    "2023-11-15T06:13:20+08:00",
+    "2023-11-15T06:13:20.123456+08:00",
+    "2023-11-15T06:13:20.123000+08:00",
+    "5138-11-16T17:46:39.998993+08:00",
+    "1973-03-03T17:46:40+08:00",
+    "1970-01-01T08:00:00.001000+08:00",
+    null,
+    null,
+    null,
+    null,
+    "2026-10-19T15:26:26.722043+08:00",
+    "2023-11-15T06:13:20.500000+08:00",
+    null,
+    "2026-10-18T00:00:00+08:00",
+    "2026-10-18T22:34:42+08:00",
+    "2026-10-18T22:34:42+08:00",
+    "2026-10-18T22:34:42+08:00",
+    "2026-10-18T22:34:42.500000+08:00",
+    "2026-10-19T09:04:42.123456+08:00",
+    "2026-10-18T22:34:00+08:00",
+    null,
+    "2026-10-12T00:00:00+08:00",
+    "2026-10-12T00:00:00+08:00",
+    "2026-10-12T00:00:00+08:00",
+    "2026-10-12T00:00:00+08:00",
+    "2027-01-03T00:00:00+08:00",
+    null,
+    "2026-10-14T07:59:58.999999+08:00",
+    null,
+    "0001-01-01T08:00:00+08:00",
+    "9999-12-31T23:59:59+08:00",
+    null,
+    "2026-10-18T10:29:29.500000+08:00",
+    "2026-10-18T18:30:00+08:00",
+    "2026-10-18T08:51:00+08:00",
+    "2026-10-18T18:30:00+08:00",
+    null,
+    null,
+    "2026-10-18T10:30:00+08:00",
+    "2026-10-18T10:30:00.500000+08:00",
+    "2026-10-18T10:30:00.123456+08:00",
+    null,
+    "2026-10-18T10:30:00+08:00",
+    "2026-10-18T10:30:00+08:00",
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "records": [
+    {
+      "result": {
+        "cloud_draft_cover": false,
+        "cloud_draft_sync": false,
+        "draft_cloud_last_action_download": false,
+        "draft_cloud_purchase_info": "",
+        "draft_cloud_template_id": "",
+        "draft_cloud_tutorial_info": "",
+        "draft_cloud_videocut_purchase_info": "",
+        "draft_cover": "",
+        "draft_fold_path": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE",
+        "draft_id": "870F8B67-3D2F-441C-BDE0-760C8529A2DE",
+        "draft_is_ai_shorts": false,
+        "draft_is_cloud_temp_draft": false,
+        "draft_is_infinite_canvas_draft": false,
+        "draft_is_invisible": false,
+        "draft_is_pippit_draft": false,
+        "draft_is_web_article_video": false,
+        "draft_json_file": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE/draft_content.json",
+        "draft_name": "Record sample",
+        "draft_new_version": "",
+        "draft_root_path": "${BASE}/drafts",
+        "draft_timeline_materials_size": 16,
+        "draft_type": "",
+        "draft_web_article_video_enter_from": "",
+        "pippit_avatar_url": "",
+        "pippit_extra_info": "",
+        "pippit_id": "",
+        "pippit_user_name": "",
+        "streaming_edit_draft_ready": true,
+        "tm_draft_cloud_completed": "",
+        "tm_draft_cloud_entry_id": -1,
+        "tm_draft_cloud_modified": 0,
+        "tm_draft_cloud_space_id": -1,
+        "tm_draft_cloud_user_id": -1,
+        "tm_draft_create": 1700000000000000,
+        "tm_draft_modified": 1700000000000000,
+        "tm_draft_parent_entry_id": -1,
+        "tm_draft_removed": 0,
+        "tm_duration": 5000000
+      }
+    },
+    {
+      "result": {
+        "cloud_draft_cover": false,
+        "cloud_draft_sync": false,
+        "draft_cloud_last_action_download": false,
+        "draft_cloud_purchase_info": "",
+        "draft_cloud_template_id": "",
+        "draft_cloud_tutorial_info": "",
+        "draft_cloud_videocut_purchase_info": "",
+        "draft_cover": "",
+        "draft_fold_path": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE",
+        "draft_id": "870F8B67-3D2F-441C-BDE0-760C8529A2DE",
+        "draft_is_ai_shorts": false,
+        "draft_is_cloud_temp_draft": false,
+        "draft_is_infinite_canvas_draft": false,
+        "draft_is_invisible": false,
+        "draft_is_pippit_draft": false,
+        "draft_is_web_article_video": false,
+        "draft_json_file": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE/draft_content.json",
+        "draft_name": "Record sample",
+        "draft_new_version": "",
+        "draft_root_path": "${BASE}/drafts",
+        "draft_timeline_materials_size": 0,
+        "draft_type": "",
+        "draft_web_article_video_enter_from": "",
+        "pippit_avatar_url": "",
+        "pippit_extra_info": "",
+        "pippit_id": "",
+        "pippit_user_name": "",
+        "streaming_edit_draft_ready": true,
+        "tm_draft_cloud_completed": "",
+        "tm_draft_cloud_entry_id": -1,
+        "tm_draft_cloud_modified": 0,
+        "tm_draft_cloud_space_id": -1,
+        "tm_draft_cloud_user_id": -1,
+        "tm_draft_create": 1700000000000000,
+        "tm_draft_modified": 1700000005000000,
+        "tm_draft_parent_entry_id": -1,
+        "tm_draft_removed": 0,
+        "tm_duration": 0
+      }
+    },
+    {
+      "result": {
+        "cloud_draft_cover": false,
+        "cloud_draft_sync": false,
+        "draft_cloud_last_action_download": false,
+        "draft_cloud_purchase_info": "",
+        "draft_cloud_template_id": "",
+        "draft_cloud_tutorial_info": "",
+        "draft_cloud_videocut_purchase_info": "",
+        "draft_cover": "",
+        "draft_fold_path": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE",
+        "draft_id": "870F8B67-3D2F-441C-BDE0-760C8529A2DE",
+        "draft_is_ai_shorts": false,
+        "draft_is_cloud_temp_draft": false,
+        "draft_is_infinite_canvas_draft": false,
+        "draft_is_invisible": false,
+        "draft_is_pippit_draft": false,
+        "draft_is_web_article_video": false,
+        "draft_json_file": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE/draft_content.json",
+        "draft_name": "Record sample",
+        "draft_new_version": "",
+        "draft_root_path": "${BASE}/drafts",
+        "draft_timeline_materials_size": 0,
+        "draft_type": "",
+        "draft_web_article_video_enter_from": "",
+        "pippit_avatar_url": "",
+        "pippit_extra_info": "",
+        "pippit_id": "",
+        "pippit_user_name": "",
+        "streaming_edit_draft_ready": true,
+        "tm_draft_cloud_completed": "",
+        "tm_draft_cloud_entry_id": -1,
+        "tm_draft_cloud_modified": 0,
+        "tm_draft_cloud_space_id": -1,
+        "tm_draft_cloud_user_id": -1,
+        "tm_draft_create": 1700000000000000,
+        "tm_draft_modified": 1700000005000000,
+        "tm_draft_parent_entry_id": -1,
+        "tm_draft_removed": 0,
+        "tm_duration": 0
+      }
+    },
+    {
+      "result": {
+        "cloud_draft_cover": false,
+        "cloud_draft_sync": false,
+        "draft_cloud_last_action_download": false,
+        "draft_cloud_purchase_info": "",
+        "draft_cloud_template_id": "",
+        "draft_cloud_tutorial_info": "",
+        "draft_cloud_videocut_purchase_info": "",
+        "draft_cover": "",
+        "draft_fold_path": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE",
+        "draft_id": "870F8B67-3D2F-441C-BDE0-760C8529A2DE",
+        "draft_is_ai_shorts": false,
+        "draft_is_cloud_temp_draft": false,
+        "draft_is_infinite_canvas_draft": false,
+        "draft_is_invisible": false,
+        "draft_is_pippit_draft": false,
+        "draft_is_web_article_video": false,
+        "draft_json_file": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE/draft_content.json",
+        "draft_name": "Record sample",
+        "draft_new_version": "",
+        "draft_root_path": "${BASE}/drafts",
+        "draft_timeline_materials_size": 0,
+        "draft_type": "",
+        "draft_web_article_video_enter_from": "",
+        "pippit_avatar_url": "",
+        "pippit_extra_info": "",
+        "pippit_id": "",
+        "pippit_user_name": "",
+        "streaming_edit_draft_ready": true,
+        "tm_draft_cloud_completed": "",
+        "tm_draft_cloud_entry_id": -1,
+        "tm_draft_cloud_modified": 0,
+        "tm_draft_cloud_space_id": -1,
+        "tm_draft_cloud_user_id": -1,
+        "tm_draft_create": 1700000000000000,
+        "tm_draft_modified": 1700000005000000,
+        "tm_draft_parent_entry_id": -1,
+        "tm_draft_removed": 0,
+        "tm_duration": 0
+      }
+    },
+    {
+      "result": {
+        "cloud_draft_cover": false,
+        "cloud_draft_sync": false,
+        "draft_cloud_last_action_download": false,
+        "draft_cloud_purchase_info": "",
+        "draft_cloud_template_id": "",
+        "draft_cloud_tutorial_info": "",
+        "draft_cloud_videocut_purchase_info": "",
+        "draft_cover": "",
+        "draft_fold_path": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE",
+        "draft_id": "870F8B67-3D2F-441C-BDE0-760C8529A2DE",
+        "draft_is_ai_shorts": false,
+        "draft_is_cloud_temp_draft": false,
+        "draft_is_infinite_canvas_draft": false,
+        "draft_is_invisible": false,
+        "draft_is_pippit_draft": false,
+        "draft_is_web_article_video": false,
+        "draft_json_file": "${BASE}/drafts/870F8B673D2F441CBDE0760C8529A2DE/draft_content.json",
+        "draft_name": "Record sample",
+        "draft_new_version": "",
+        "draft_root_path": "${BASE}/drafts",
+        "draft_timeline_materials_size": 0,
+        "draft_type": "",
+        "draft_web_article_video_enter_from": "",
+        "pippit_avatar_url": "",
+        "pippit_extra_info": "",
+        "pippit_id": "",
+        "pippit_user_name": "",
+        "streaming_edit_draft_ready": true,
+        "tm_draft_cloud_completed": "",
+        "tm_draft_cloud_entry_id": -1,
+        "tm_draft_cloud_modified": 0,
+        "tm_draft_cloud_space_id": -1,
+        "tm_draft_cloud_user_id": -1,
+        "tm_draft_create": 1700000000000000,
+        "tm_draft_modified": 1700000005000000,
+        "tm_draft_parent_entry_id": -1,
+        "tm_draft_removed": 0,
+        "tm_duration": 0
+      }
+    },
+    {
+      "error": {
+        "code": "DRAFT_BOX_INVALID_DRAFT",
+        "status": 500
+      }
+    },
+    {
+      "error": {
+        "code": "DRAFT_BOX_INVALID_DRAFT",
+        "status": 500
+      }
+    },
+    {
+      "error": {
+        "code": "DRAFT_BOX_INVALID_DRAFT",
+        "status": 500
+      }
+    }
+  ],
+  "casefold": {
+    "chars": {
+      "b5": "μ",
+      "df": "ss",
+      "149": "ʼn",
+      "17f": "s",
+      "1f0": "ǰ",
+      "345": "ι",
+      "390": "ΐ",
+      "3b0": "ΰ",
+      "3c2": "σ",
+      "3d0": "β",
+      "3d1": "θ",
+      "3d5": "φ",
+      "3d6": "π",
+      "3f0": "κ",
+      "3f1": "ρ",
+      "3f5": "ε",
+      "587": "եւ",
+      "13a0": "Ꭰ",
+      "13a1": "Ꭱ",
+      "13a2": "Ꭲ",
+      "13a3": "Ꭳ",
+      "13a4": "Ꭴ",
+      "13a5": "Ꭵ",
+      "13a6": "Ꭶ",
+      "13a7": "Ꭷ",
+      "13a8": "Ꭸ",
+      "13a9": "Ꭹ",
+      "13aa": "Ꭺ",
+      "13ab": "Ꭻ",
+      "13ac": "Ꭼ",
+      "13ad": "Ꭽ",
+      "13ae": "Ꭾ",
+      "13af": "Ꭿ",
+      "13b0": "Ꮀ",
+      "13b1": "Ꮁ",
+      "13b2": "Ꮂ",
+      "13b3": "Ꮃ",
+      "13b4": "Ꮄ",
+      "13b5": "Ꮅ",
+      "13b6": "Ꮆ",
+      "13b7": "Ꮇ",
+      "13b8": "Ꮈ",
+      "13b9": "Ꮉ",
+      "13ba": "Ꮊ",
+      "13bb": "Ꮋ",
+      "13bc": "Ꮌ",
+      "13bd": "Ꮍ",
+      "13be": "Ꮎ",
+      "13bf": "Ꮏ",
+      "13c0": "Ꮐ",
+      "13c1": "Ꮑ",
+      "13c2": "Ꮒ",
+      "13c3": "Ꮓ",
+      "13c4": "Ꮔ",
+      "13c5": "Ꮕ",
+      "13c6": "Ꮖ",
+      "13c7": "Ꮗ",
+      "13c8": "Ꮘ",
+      "13c9": "Ꮙ",
+      "13ca": "Ꮚ",
+      "13cb": "Ꮛ",
+      "13cc": "Ꮜ",
+      "13cd": "Ꮝ",
+      "13ce": "Ꮞ",
+      "13cf": "Ꮟ",
+      "13d0": "Ꮠ",
+      "13d1": "Ꮡ",
+      "13d2": "Ꮢ",
+      "13d3": "Ꮣ",
+      "13d4": "Ꮤ",
+      "13d5": "Ꮥ",
+      "13d6": "Ꮦ",
+      "13d7": "Ꮧ",
+      "13d8": "Ꮨ",
+      "13d9": "Ꮩ",
+      "13da": "Ꮪ",
+      "13db": "Ꮫ",
+      "13dc": "Ꮬ",
+      "13dd": "Ꮭ",
+      "13de": "Ꮮ",
+      "13df": "Ꮯ",
+      "13e0": "Ꮰ",
+      "13e1": "Ꮱ",
+      "13e2": "Ꮲ",
+      "13e3": "Ꮳ",
+      "13e4": "Ꮴ",
+      "13e5": "Ꮵ",
+      "13e6": "Ꮶ",
+      "13e7": "Ꮷ",
+      "13e8": "Ꮸ",
+      "13e9": "Ꮹ",
+      "13ea": "Ꮺ",
+      "13eb": "Ꮻ",
+      "13ec": "Ꮼ",
+      "13ed": "Ꮽ",
+      "13ee": "Ꮾ",
+      "13ef": "Ꮿ",
+      "13f0": "Ᏸ",
+      "13f1": "Ᏹ",
+      "13f2": "Ᏺ",
+      "13f3": "Ᏻ",
+      "13f4": "Ᏼ",
+      "13f5": "Ᏽ",
+      "13f8": "Ᏸ",
+      "13f9": "Ᏹ",
+      "13fa": "Ᏺ",
+      "13fb": "Ᏻ",
+      "13fc": "Ᏼ",
+      "13fd": "Ᏽ",
+      "1c80": "в",
+      "1c81": "д",
+      "1c82": "о",
+      "1c83": "с",
+      "1c84": "т",
+      "1c85": "т",
+      "1c86": "ъ",
+      "1c87": "ѣ",
+      "1c88": "ꙋ",
+      "1e96": "ẖ",
+      "1e97": "ẗ",
+      "1e98": "ẘ",
+      "1e99": "ẙ",
+      "1e9a": "aʾ",
+      "1e9b": "ṡ",
+      "1e9e": "ss",
+      "1f50": "ὐ",
+      "1f52": "ὒ",
+      "1f54": "ὔ",
+      "1f56": "ὖ",
+      "1f80": "ἀι",
+      "1f81": "ἁι",
+      "1f82": "ἂι",
+      "1f83": "ἃι",
+      "1f84": "ἄι",
+      "1f85": "ἅι",
+      "1f86": "ἆι",
+      "1f87": "ἇι",
+      "1f88": "ἀι",
+      "1f89": "ἁι",
+      "1f8a": "ἂι",
+      "1f8b": "ἃι",
+      "1f8c": "ἄι",
+      "1f8d": "ἅι",
+      "1f8e": "ἆι",
+      "1f8f": "ἇι",
+      "1f90": "ἠι",
+      "1f91": "ἡι",
+      "1f92": "ἢι",
+      "1f93": "ἣι",
+      "1f94": "ἤι",
+      "1f95": "ἥι",
+      "1f96": "ἦι",
+      "1f97": "ἧι",
+      "1f98": "ἠι",
+      "1f99": "ἡι",
+      "1f9a": "ἢι",
+      "1f9b": "ἣι",
+      "1f9c": "ἤι",
+      "1f9d": "ἥι",
+      "1f9e": "ἦι",
+      "1f9f": "ἧι",
+      "1fa0": "ὠι",
+      "1fa1": "ὡι",
+      "1fa2": "ὢι",
+      "1fa3": "ὣι",
+      "1fa4": "ὤι",
+      "1fa5": "ὥι",
+      "1fa6": "ὦι",
+      "1fa7": "ὧι",
+      "1fa8": "ὠι",
+      "1fa9": "ὡι",
+      "1faa": "ὢι",
+      "1fab": "ὣι",
+      "1fac": "ὤι",
+      "1fad": "ὥι",
+      "1fae": "ὦι",
+      "1faf": "ὧι",
+      "1fb2": "ὰι",
+      "1fb3": "αι",
+      "1fb4": "άι",
+      "1fb6": "ᾶ",
+      "1fb7": "ᾶι",
+      "1fbc": "αι",
+      "1fbe": "ι",
+      "1fc2": "ὴι",
+      "1fc3": "ηι",
+      "1fc4": "ήι",
+      "1fc6": "ῆ",
+      "1fc7": "ῆι",
+      "1fcc": "ηι",
+      "1fd2": "ῒ",
+      "1fd3": "ΐ",
+      "1fd6": "ῖ",
+      "1fd7": "ῗ",
+      "1fe2": "ῢ",
+      "1fe3": "ΰ",
+      "1fe4": "ῤ",
+      "1fe6": "ῦ",
+      "1fe7": "ῧ",
+      "1ff2": "ὼι",
+      "1ff3": "ωι",
+      "1ff4": "ώι",
+      "1ff6": "ῶ",
+      "1ff7": "ῶι",
+      "1ffc": "ωι",
+      "ab70": "Ꭰ",
+      "ab71": "Ꭱ",
+      "ab72": "Ꭲ",
+      "ab73": "Ꭳ",
+      "ab74": "Ꭴ",
+      "ab75": "Ꭵ",
+      "ab76": "Ꭶ",
+      "ab77": "Ꭷ",
+      "ab78": "Ꭸ",
+      "ab79": "Ꭹ",
+      "ab7a": "Ꭺ",
+      "ab7b": "Ꭻ",
+      "ab7c": "Ꭼ",
+      "ab7d": "Ꭽ",
+      "ab7e": "Ꭾ",
+      "ab7f": "Ꭿ",
+      "ab80": "Ꮀ",
+      "ab81": "Ꮁ",
+      "ab82": "Ꮂ",
+      "ab83": "Ꮃ",
+      "ab84": "Ꮄ",
+      "ab85": "Ꮅ",
+      "ab86": "Ꮆ",
+      "ab87": "Ꮇ",
+      "ab88": "Ꮈ",
+      "ab89": "Ꮉ",
+      "ab8a": "Ꮊ",
+      "ab8b": "Ꮋ",
+      "ab8c": "Ꮌ",
+      "ab8d": "Ꮍ",
+      "ab8e": "Ꮎ",
+      "ab8f": "Ꮏ",
+      "ab90": "Ꮐ",
+      "ab91": "Ꮑ",
+      "ab92": "Ꮒ",
+      "ab93": "Ꮓ",
+      "ab94": "Ꮔ",
+      "ab95": "Ꮕ",
+      "ab96": "Ꮖ",
+      "ab97": "Ꮗ",
+      "ab98": "Ꮘ",
+      "ab99": "Ꮙ",
+      "ab9a": "Ꮚ",
+      "ab9b": "Ꮛ",
+      "ab9c": "Ꮜ",
+      "ab9d": "Ꮝ",
+      "ab9e": "Ꮞ",
+      "ab9f": "Ꮟ",
+      "aba0": "Ꮠ",
+      "aba1": "Ꮡ",
+      "aba2": "Ꮢ",
+      "aba3": "Ꮣ",
+      "aba4": "Ꮤ",
+      "aba5": "Ꮥ",
+      "aba6": "Ꮦ",
+      "aba7": "Ꮧ",
+      "aba8": "Ꮨ",
+      "aba9": "Ꮩ",
+      "abaa": "Ꮪ",
+      "abab": "Ꮫ",
+      "abac": "Ꮬ",
+      "abad": "Ꮭ",
+      "abae": "Ꮮ",
+      "abaf": "Ꮯ",
+      "abb0": "Ꮰ",
+      "abb1": "Ꮱ",
+      "abb2": "Ꮲ",
+      "abb3": "Ꮳ",
+      "abb4": "Ꮴ",
+      "abb5": "Ꮵ",
+      "abb6": "Ꮶ",
+      "abb7": "Ꮷ",
+      "abb8": "Ꮸ",
+      "abb9": "Ꮹ",
+      "abba": "Ꮺ",
+      "abbb": "Ꮻ",
+      "abbc": "Ꮼ",
+      "abbd": "Ꮽ",
+      "abbe": "Ꮾ",
+      "abbf": "Ꮿ",
+      "fb00": "ff",
+      "fb01": "fi",
+      "fb02": "fl",
+      "fb03": "ffi",
+      "fb04": "ffl",
+      "fb05": "st",
+      "fb06": "st",
+      "fb13": "մն",
+      "fb14": "մե",
+      "fb15": "մի",
+      "fb16": "վն",
+      "fb17": "մխ"
+    },
+    "strings": [
+      "ΟΔΟΣ",
+      "ΣΑΣ σας",
+      "Straße STRASSE ẞ",
+      "ﬁle ﬂow ﬃ",
+      "İstanbul ıi",
+      "ᾈᾼῼ ᾳ",
+      "Ꭰꭰᏸ",
+      "µſ ͅ",
+      "Ǆǅǆ",
+      "草稿 Ünïcode"
+    ],
+    "folded": [
+      "οδοσ",
+      "σασ σασ",
+      "strasse strasse ss",
+      "file flow ffi",
+      "i̇stanbul ıi",
+      "ἀιαιωι αι",
+      "ᎠᎠᏰ",
+      "μs ι",
+      "ǆǆǆ",
+      "草稿 ünïcode"
+    ]
+  },
+  "index_round_trips": [
+    {
+      "raw": "{\"draft_id\":\"CLOUD_OTHER\",\"draft_name\":\"别人的云草稿\",\"draft_fold_path\":\"${BASE}/drafts/CloudOther\",\"tm_draft_cloud_user_id\":7234567890123456789,\"tm_draft_cloud_entry_id\":7345678901234567891,\"tm_draft_cloud_space_id\":7012345678901234567,\"draft_timeline_materials_size\":1.0,\"tm_duration\":2500000.0,\"ratio\":0.1,\"tiny\":1e-07,\"huge\":1e+22,\"negative_zero\":-0.0,\"nested\":{\"10\":[1.0,-1],\"2\":{\"z\":null,\"a\":true}}}",
+      "python": "{\"draft_id\":\"CLOUD_OTHER\",\"draft_name\":\"别人的云草稿\",\"draft_fold_path\":\"${BASE}/drafts/CloudOther\",\"tm_draft_cloud_user_id\":7234567890123456789,\"tm_draft_cloud_entry_id\":7345678901234567891,\"tm_draft_cloud_space_id\":7012345678901234567,\"draft_timeline_materials_size\":1.0,\"tm_duration\":2500000.0,\"ratio\":0.1,\"tiny\":1e-07,\"huge\":1e+22,\"negative_zero\":-0.0,\"nested\":{\"10\":[1.0,-1],\"2\":{\"z\":null,\"a\":true}}}"
+    },
+    {
+      "raw": "{\"keep\":[\"all\",\"original\",\"fields\"],\"written\":[2.5e6,1E+2,-0,12345678901234567890123,\"\\u00e9\\n\"]}",
+      "python": "{\"keep\":[\"all\",\"original\",\"fields\"],\"written\":[2500000.0,100.0,0,12345678901234567890123,\"é\\n\"]}"
+    },
+    {
+      "raw": "{\"a\":1,\"a\":2,\"b\":3,\"a\":4}",
+      "python": "{\"a\":4,\"b\":3}"
+    },
+    {
+      "raw": "{\"10\":1,\"2\":2,\"a\":3,\"-1\":4,\"01\":5}",
+      "python": "{\"10\":1,\"2\":2,\"a\":3,\"-1\":4,\"01\":5}"
+    },
+    {
+      "raw": " { \"x\" : [ 1 , 2.50 , 1E5 , 1e-5 , 0.0001 , 1e16 , 1e15 , 123456789012345678901234567890 ] }\n",
+      "python": "{\"x\":[1,2.5,100000.0,1e-05,0.0001,1e+16,1000000000000000.0,123456789012345678901234567890]}"
+    },
+    {
+      "raw": "[1.0,-0,-0.0,0.0,5e-324,1.7976931348623157e308,9007199254740993,-9007199254740993]",
+      "python": "[1.0,0,-0.0,0.0,5e-324,1.7976931348623157e+308,9007199254740993,-9007199254740993]"
+    },
+    {
+      "raw": "[\"\\u00e9\\u2028\\/\\b\\f\\n\\r\\t\\u0000\\u001f\\\"\\\\\",\"\\ud83d\\ude00\",\"é\"]",
+      "python": "[\"é /\\b\\f\\n\\r\\t\\u0000\\u001f\\\"\\\\\",\"😀\",\"é\"]"
+    },
+    {
+      "raw": "[1e400]",
+      "python": null
+    },
+    {
+      "raw": "[-1e-400]",
+      "python": "[-0.0]"
+    },
+    {
+      "raw": "{\"x\":1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111}",
+      "python": "{\"x\":1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111}"
+    },
+    {
+      "raw": "{\"x\":11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111}",
+      "python": null
+    }
+  ]
+}
