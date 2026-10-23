@@ -27,7 +27,8 @@ DeepSeek 等模型可通过外部客户端调用这些接口。本仓库不内�
 | 草稿箱 | 状态、搜索列表、元数据详情、新建、原位修复本服务拥有的草稿 | 写入前必须退出剪映；不解密任意现有草稿 |
 | 独立素材商店 | 状态、诊断、打开、读取、可用分类导航 | 已检查的剪映 11.6 独立商店没有搜索框，搜索可能返回 `unsupported` |
 | 编辑器贴纸库 | 打开、读取、关键词搜索、分类浏览 | 依赖剪映窗口、布局和 OCR；不提取卡片资源 ID、不添加到时间线 |
-| 本机用户画像 | 账号 ID、登录平台、客户端版本、偏好路径、本地草稿数 | 只读剪映已写在本机的设置与草稿索引，不联网、不解密；昵称、头像、会员态只存在于服务端，不提供 |
+| 本机用户画像 | 账号 ID、登录平台、客户端版本、偏好路径、本地草稿数 | 只读剪映已写在本机的设置与草稿索引，不联网、不解密 |
+| 账号昵称与会员态 | 昵称、会员等级（SVIP/VIP/免费）、到期日期 | 只能读屏幕：裁剪账号角标后 OCR，需要剪映主程序在前台；已过期、未登录都按实际返回 |
 
 不包含视频导出。为兼容旧客户端保留的 `/export` 路由只返回 `unsupported`，不会生成 MP4。智能抠像、自动字幕、补帧、防抖、速度曲线等未实现。
 
@@ -48,11 +49,13 @@ Set-Location JianYingAPI
 
 `setup.ps1` 使用 `uv.lock` 安装固定版本依赖、生成合成示例图片和音频，并执行测试。依赖安装需要网络；仓库不包含用户媒体或剪映商店素材。缺少 ffprobe 时，工程、文字和 SRT 操作仍可使用，添加媒体会返回 `FFPROBE_UNAVAILABLE`。
 
-需要素材商店 OCR 时安装可选依赖：
+需要素材商店 OCR、以及账号昵称与会员态查询时，安装可选依赖：
 
 ```powershell
 .\setup.ps1 -StoreOcr
 ```
+
+同一套 RapidOCR 同时驱动素材商店定位和账号角标识别。没装时这两条路径返回 `ocr_dependency_missing`，其余接口不受影响。
 
 启动后打开：
 
@@ -163,9 +166,30 @@ Invoke-RestMethod "$ApiBase/api/jianying/user/status"
 
 `mask_uid=true` 会把 uid 连同它出现的每一处一起打码，`include_paths=false` 会去掉绝对路径、只保留相对名和计数。要把结果贴进日志或工单，建议两项都开。
 
-昵称、头像、会员到期时间由剪映服务端下发，本机没有明文缓存，本服务也不调用剪映私有网络接口，所以这三项固定为 `null`，并在 `unavailable` 里给出 `remote_only` 原因。`entitlement_hints` 只是本地界面开关（如 `showVipRes`），不是会员状态，已用 `not_membership_status: true` 标注。
+昵称和会员到期时间由剪映服务端下发，本机没有明文缓存，也不调用剪映私有网络接口，因此文件层固定为 `null`，`unavailable` 里给出 `not_in_local_files` 并指向下一节的窗口接口；头像 URL 只存在于服务端，标 `remote_only`。`entitlement_hints` 只是本地界面开关（如 `showVipRes`），不是会员状态，已用 `not_membership_status: true` 标注。
 
 剪映运行时会独占部分设置文件；被占用时该来源的 `readable` 为 `false`、`reason` 为 `file_locked`，其余字段照常返回。本机找不到 `JianyingPro\User Data` 时 `available` 为 `false`、`reason` 为 `jianying_user_data_unavailable`，接口仍返回 200。
+
+## 账号昵称与会员状态（窗口 OCR）
+
+`GET /api/jianying/membership` 从剪映首页左上角的账号角标读昵称、会员等级和到期日期：
+
+```powershell
+Invoke-RestMethod "$ApiBase/api/jianying/membership"
+Invoke-RestMethod "$ApiBase/api/jianying/membership?focus=true"
+Invoke-RestMethod "$ApiBase/api/jianying/membership/status"
+```
+
+剪映在 `globalSetting` 里设置了 `disable_qt_access=1`，UI Automation 能拿到编辑器窗口本身，但拿不到任何子控件，所以这里只能读屏幕：把左上角账号区裁出来放大两倍做 OCR，再按 11.6 上实测的版式校验后返回。
+
+返回 `membership.status` 为 `svip`、`vip` 或 `free`（后者取自"开通会员"一类引导文案），同时给出 `expires_on`、`expired` 和 `days_left`。`display_name_hint` 是 OCR 读到的昵称，`display_name_confidence` 是识别置信度——昵称是用户自定义文本，识别结果只作提示，不可当作账号标识，要标识请用 `/api/jianying/user` 的 `uid`。
+
+几点边界：
+
+- 剪映窗口必须已在前台。默认不抢焦点，不在前台时返回 `window_not_foreground`；传 `focus=true` 会先把剪映切到前台，这会打断你当前的窗口操作。
+- 版式不符合实测几何（角标被折叠、窗口切换到了别的页面、同一块出现两个等级标签）时返回 `badge_layout_not_verified`、`badge_ambiguous` 或 `badge_not_readable`，不会猜一个结果。
+- 没装 RapidOCR 时返回 `ocr_dependency_missing`，`needs_gui` 恒为 `true`。
+- 这是屏幕读取，不登录、不调用剪映接口、不改任何本地文件。
 
 ## 主要接口
 
@@ -188,6 +212,7 @@ Invoke-RestMethod "$ApiBase/api/jianying/user/status"
 | `POST /api/projects/{project_id}/draft-box` | 向真实草稿箱新增草稿 |
 | `PUT /api/projects/{project_id}/draft-box/{draft_id}` | 原位修复本服务拥有的同一草稿 |
 | `GET /api/jianying/user`、`GET /api/jianying/user/status` | 本机剪映用户画像（只读） |
+| `GET /api/jianying/membership`、`GET /api/jianying/membership/status` | 昵称、会员等级与到期日期（窗口 OCR） |
 | `/api/material-store/...` | 独立商店的状态、诊断、打开、读取、搜索和分类请求 |
 | `/api/sticker-library/...` | 编辑器贴纸库的打开、读取、搜索和分类请求 |
 
@@ -227,7 +252,7 @@ MCP 使用 **stdio**，不需要先启动 HTTP 服务。HTTP 和 MCP 可以通�
 }
 ```
 
-客户端支持的配置格式可能不同。工具包括 `create_project`、`create_track`、`add_media_clip`、`add_text_clip`、`save_draft`、`create_draft_box_entry`、`repair_draft_box_entry`、`jianying_user` 等，以 MCP `tools/list` 返回结果为准。stdout 只承载协议消息，日志和错误使用 stderr。
+客户端支持的配置格式可能不同。工具包括 `create_project`、`create_track`、`add_media_clip`、`add_text_clip`、`save_draft`、`create_draft_box_entry`、`repair_draft_box_entry`、`jianying_user`、`jianying_membership` 等，以 MCP `tools/list` 返回结果为准。stdout 只承载协议消息，日志和错误使用 stderr。
 
 推荐调用顺序：查询能力 → 创建工程 → 建轨道和片段 → 写入效果/字幕 → 保存草稿或写入草稿箱 → 人工在剪映验收。AI 客户端应将 `unsupported`、`needs_gui`、`jianying_ui_verified: false` 原样反馈，不能把接口调用成功描述为剪映回放已验证。
 

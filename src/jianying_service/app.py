@@ -13,6 +13,7 @@ from .draft import animation_catalog, animation_resource_handling, editing_optio
 from .errors import ServiceError
 from .http_security import LocalRequestMiddleware
 from .material_store import MaterialStoreService
+from .membership import MembershipReader
 from .models import (
     AnimationCreate,
     BackgroundFillCreate,
@@ -114,6 +115,7 @@ def create_app(
     material_store: MaterialStoreService | None = None,
     draft_box: DraftBoxService | None = None,
     user_info: JianyingUserReader | None = None,
+    membership: MembershipReader | None = None,
     emit_deprecation_warnings: bool = False,
 ) -> FastAPI:
     settings = settings or Settings.from_env()
@@ -129,6 +131,7 @@ def create_app(
     app.state.material_store = material_store or MaterialStoreService()
     app.state.draft_box = draft_box or DraftBoxService()
     app.state.user_info = user_info or JianyingUserReader()
+    app.state.membership = membership or MembershipReader()
     app.add_middleware(LocalRequestMiddleware)
 
     @app.exception_handler(ServiceError)
@@ -591,10 +594,16 @@ def create_app(
             "jianying_user": {
                 "read": "available",
                 "local_sources": "settings_and_draft_index",
-                "nickname": "remote_only",
+                "nickname": "window_ocr",
                 "avatar": "remote_only",
-                "membership": "remote_only",
+                "membership": "window_ocr",
                 "network_access": "none",
+            },
+            "jianying_membership": {
+                "read": "available",
+                "needs_gui": True,
+                "source": "account_badge_ocr",
+                "requires_foreground": True,
             },
             "material_store": app.state.material_store.capabilities(),
         }
@@ -640,6 +649,17 @@ def create_app(
     @app.get("/api/jianying/user/status", operation_id="jianying_user_status")
     def jianying_user_status() -> dict[str, Any]:
         return app.state.user_info.status()
+
+    @app.get("/api/jianying/membership", operation_id="jianying_membership")
+    def jianying_membership(focus: bool = False) -> dict[str, Any]:
+        return app.state.membership.read(focus=focus)
+
+    @app.get(
+        "/api/jianying/membership/status",
+        operation_id="jianying_membership_status",
+    )
+    def jianying_membership_status() -> dict[str, Any]:
+        return app.state.membership.status()
 
     @app.get("/api/draft-box/status", operation_id="get_draft_box_status")
     def get_draft_box_status() -> dict[str, Any]:

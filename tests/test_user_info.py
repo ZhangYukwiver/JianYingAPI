@@ -141,9 +141,10 @@ def test_missing_profile_fields_are_reported_not_faked(user_data: Path) -> None:
     result = JianyingUserReader(user_data_root=user_data).read()
     fields = {item["field"]: item for item in result["unavailable"]}
 
-    assert fields["account.nickname"]["reason"] == "remote_only"
+    assert fields["account.nickname"]["reason"] == "not_in_local_files"
     assert fields["account.avatar_url"]["reason"] == "remote_only"
-    assert fields["account.membership"]["reason"] == "remote_only"
+    assert fields["account.membership"]["reason"] == "not_in_local_files"
+    assert "/api/jianying/membership" in fields["account.membership"]["detail"]
     assert "account.uid" not in fields
     assert result["entitlement_hints"]["not_membership_status"] is True
     assert result["entitlement_hints"]["vip_icon_viewed"] is True
@@ -290,4 +291,4 @@ def test_http_and_status_routes_expose_the_reader(
 
     capabilities = client.get("/api/capabilities").json()
     assert capabilities["jianying_user"]["network_access"] == "none"
-    assert capabilities["jianying_user"]["nickname"] == "remote_only"
+    assert capabilities["jianying_user"]["nickname"] == "window_ocr"

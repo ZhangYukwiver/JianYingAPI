@@ -45,6 +45,7 @@ from .models import (
 )
 from .service import ProjectService
 from .user_info import JianyingUserReader
+from .membership import MembershipReader
 
 
 OK = {"ok": True}
@@ -107,12 +108,14 @@ def create_server(
     material_store: MaterialStoreService | None = None,
     draft_box: DraftBoxService | None = None,
     user_info: JianyingUserReader | None = None,
+    membership: MembershipReader | None = None,
 ) -> MCPServer:
     settings = settings or Settings.from_env()
     service = service or ProjectService(settings)
     material_store = material_store or MaterialStoreService()
     draft_box = draft_box or DraftBoxService()
     user_info = user_info or JianyingUserReader()
+    membership = membership or MembershipReader()
     server = MCPServer(
         name="jianying-ai-service",
         version="0.1.0",
@@ -618,10 +621,16 @@ def create_server(
             "jianying_user": {
                 "read": "available",
                 "local_sources": "settings_and_draft_index",
-                "nickname": "remote_only",
+                "nickname": "window_ocr",
                 "avatar": "remote_only",
-                "membership": "remote_only",
+                "membership": "window_ocr",
                 "network_access": "none",
+            },
+            "jianying_membership": {
+                "read": "available",
+                "needs_gui": True,
+                "source": "account_badge_ocr",
+                "requires_foreground": True,
             },
             "material_store": material_store.capabilities(),
         }
@@ -672,10 +681,28 @@ def create_server(
         """Read the local Jianying account profile without network or writes.
 
         Returns the account id the client stores locally, the login platform,
-        client build, preferences and draft counts. The display name, avatar and
-        membership come from Jianying's servers and are reported as unavailable.
+        client build, preferences and draft counts. The display name and the
+        membership tier are only visible in the Jianying window; use
+        jianying_membership to read them through OCR.
         """
         return user_info.read(mask_uid=mask_uid, include_paths=include_paths)
+
+    @server.tool(structured_output=False, name="jianying_membership")
+    @tool
+    def jianying_membership(focus: bool = False) -> dict[str, Any]:
+        """Read membership tier and expiry from the Jianying account badge.
+
+        Jianying disables Qt accessibility, so this captures the badge block and
+        OCRs it. The Jianying window must already be in the foreground; pass
+        focus=true to raise it first, which moves the user's foreground window.
+        """
+        return membership.read(focus=focus)
+
+    @server.tool(structured_output=False, name="jianying_membership_status")
+    @tool
+    def jianying_membership_status() -> dict[str, Any]:
+        """Report whether the badge OCR dependency is installed."""
+        return membership.status()
 
     @server.tool(structured_output=False, name="jianying_user_status")
     @tool
