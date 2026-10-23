@@ -73,6 +73,8 @@ EXPECTED_TOOLS = {
     "open_sticker_library",
     "search_sticker_library",
     "browse_sticker_library",
+    "jianying_user",
+    "jianying_user_status",
 }
 
 

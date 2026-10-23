@@ -27,6 +27,7 @@ DeepSeek 等模型可通过外部客户端调用这些接口。本仓库不内�
 | 草稿箱 | 状态、搜索列表、元数据详情、新建、原位修复本服务拥有的草稿 | 写入前必须退出剪映；不解密任意现有草稿 |
 | 独立素材商店 | 状态、诊断、打开、读取、可用分类导航 | 已检查的剪映 11.6 独立商店没有搜索框，搜索可能返回 `unsupported` |
 | 编辑器贴纸库 | 打开、读取、关键词搜索、分类浏览 | 依赖剪映窗口、布局和 OCR；不提取卡片资源 ID、不添加到时间线 |
+| 本机用户画像 | 账号 ID、登录平台、客户端版本、偏好路径、本地草稿数 | 只读剪映已写在本机的设置与草稿索引，不联网、不解密；昵称、头像、会员态只存在于服务端，不提供 |
 
 不包含视频导出。为兼容旧客户端保留的 `/export` 路由只返回 `unsupported`，不会生成 MP4。智能抠像、自动字幕、补帧、防抖、速度曲线等未实现。
 
@@ -148,6 +149,24 @@ Invoke-RestMethod -Method Put "$ApiBase/api/projects/$ProjectId/draft-box/$Draft
 
 这不是对任意剪映草稿的编辑或解密接口。剪映中人工修改的时间线不会反向同步到服务工程；原位修复会用服务工程重建生成内容。请先自行备份重要草稿。服务在暂存构建、校验后替换目录和索引，并在失败时尝试回滚；若返回 `DRAFT_BOX_REPAIR_ROLLBACK_FAILED`，应按响应中的本地恢复路径处理，先不要再次写入。
 
+## 本机剪映用户画像（只读）
+
+`GET /api/jianying/user` 读取剪映自己写在本机的设置文件和草稿索引，返回这台机器上登录过的账号标识与客户端状态。不联网、不写入、不解密凭据。
+
+```powershell
+Invoke-RestMethod "$ApiBase/api/jianying/user"
+Invoke-RestMethod "$ApiBase/api/jianying/user?mask_uid=true&include_paths=false"
+Invoke-RestMethod "$ApiBase/api/jianying/user/status"
+```
+
+`account.uid` 取自剪映自己的云草稿目录名（`Projects/com.lveditor.cloud.draft_<uid>`）和带账号后缀的配置键；`uid_sources` 列出每个出处，至少两类来源一致时 `uid_confidence` 为 `high`，只有一处时为 `single_source`。`signed_in_hint` 只表示本机留下了登录痕迹，不代表此刻处于登录态。
+
+`mask_uid=true` 会把 uid 连同它出现的每一处一起打码，`include_paths=false` 会去掉绝对路径、只保留相对名和计数。要把结果贴进日志或工单，建议两项都开。
+
+昵称、头像、会员到期时间由剪映服务端下发，本机没有明文缓存，本服务也不调用剪映私有网络接口，所以这三项固定为 `null`，并在 `unavailable` 里给出 `remote_only` 原因。`entitlement_hints` 只是本地界面开关（如 `showVipRes`），不是会员状态，已用 `not_membership_status: true` 标注。
+
+剪映运行时会独占部分设置文件；被占用时该来源的 `readable` 为 `false`、`reason` 为 `file_locked`，其余字段照常返回。本机找不到 `JianyingPro\User Data` 时 `available` 为 `false`、`reason` 为 `jianying_user_data_unavailable`，接口仍返回 200。
+
 ## 主要接口
 
 完整参数、返回模型和所有路由以 `/docs`、`/openapi.json` 为准。
@@ -168,6 +187,7 @@ Invoke-RestMethod -Method Put "$ApiBase/api/projects/$ProjectId/draft-box/$Draft
 | `GET /api/draft-box/status`、`GET /api/draft-box`、`GET /api/draft-box/{draft_id}` | 草稿箱状态、列表、元数据 |
 | `POST /api/projects/{project_id}/draft-box` | 向真实草稿箱新增草稿 |
 | `PUT /api/projects/{project_id}/draft-box/{draft_id}` | 原位修复本服务拥有的同一草稿 |
+| `GET /api/jianying/user`、`GET /api/jianying/user/status` | 本机剪映用户画像（只读） |
 | `/api/material-store/...` | 独立商店的状态、诊断、打开、读取、搜索和分类请求 |
 | `/api/sticker-library/...` | 编辑器贴纸库的打开、读取、搜索和分类请求 |
 
@@ -207,7 +227,7 @@ MCP 使用 **stdio**，不需要先启动 HTTP 服务。HTTP 和 MCP 可以通�
 }
 ```
 
-客户端支持的配置格式可能不同。工具包括 `create_project`、`create_track`、`add_media_clip`、`add_text_clip`、`save_draft`、`create_draft_box_entry`、`repair_draft_box_entry` 等，以 MCP `tools/list` 返回结果为准。stdout 只承载协议消息，日志和错误使用 stderr。
+客户端支持的配置格式可能不同。工具包括 `create_project`、`create_track`、`add_media_clip`、`add_text_clip`、`save_draft`、`create_draft_box_entry`、`repair_draft_box_entry`、`jianying_user` 等，以 MCP `tools/list` 返回结果为准。stdout 只承载协议消息，日志和错误使用 stderr。
 
 推荐调用顺序：查询能力 → 创建工程 → 建轨道和片段 → 写入效果/字幕 → 保存草稿或写入草稿箱 → 人工在剪映验收。AI 客户端应将 `unsupported`、`needs_gui`、`jianying_ui_verified: false` 原样反馈，不能把接口调用成功描述为剪映回放已验证。
 
