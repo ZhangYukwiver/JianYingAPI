@@ -435,24 +435,28 @@ class JianyingUserReader:
         unavailable: list[dict[str, Any]] = [
             {
                 "field": "account.nickname",
-                "reason": "remote_only",
+                "reason": "not_in_local_files",
                 "detail": (
-                    "Jianying keeps the display name on its servers; no local "
-                    "cache of it exists, and this service does not call "
-                    "Jianying's private network endpoints"
+                    "Jianying keeps the display name on its servers and never "
+                    "caches it on disk. It is printed in the account badge, so "
+                    "/api/jianying/membership reads it from the window via OCR."
                 ),
             },
             {
                 "field": "account.avatar_url",
                 "reason": "remote_only",
-                "detail": "Same as nickname: not cached locally.",
+                "detail": (
+                    "The avatar is a remote image the client renders; no local "
+                    "record of its URL exists."
+                ),
             },
             {
                 "field": "account.membership",
-                "reason": "remote_only",
+                "reason": "not_in_local_files",
                 "detail": (
-                    "VIP state is resolved by the client online. Local files only "
-                    "record UI switches such as showVipRes."
+                    "VIP state is resolved by the client online and only lands in "
+                    "encrypted storage. The badge shows it as text, so "
+                    "/api/jianying/membership reads tier and expiry via OCR."
                 ),
             },
         ]
