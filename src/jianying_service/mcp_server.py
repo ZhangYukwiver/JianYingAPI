@@ -44,6 +44,7 @@ from .models import (
     TransitionCreate,
 )
 from .service import ProjectService
+from .user_info import JianyingUserReader
 
 
 OK = {"ok": True}
@@ -105,11 +106,13 @@ def create_server(
     settings: Settings | None = None,
     material_store: MaterialStoreService | None = None,
     draft_box: DraftBoxService | None = None,
+    user_info: JianyingUserReader | None = None,
 ) -> MCPServer:
     settings = settings or Settings.from_env()
     service = service or ProjectService(settings)
     material_store = material_store or MaterialStoreService()
     draft_box = draft_box or DraftBoxService()
+    user_info = user_info or JianyingUserReader()
     server = MCPServer(
         name="jianying-ai-service",
         version="0.1.0",
@@ -612,6 +615,14 @@ def create_server(
                 "timeline_content": "unsupported_encrypted",
             },
             "export": export_status(),
+            "jianying_user": {
+                "read": "available",
+                "local_sources": "settings_and_draft_index",
+                "nickname": "remote_only",
+                "avatar": "remote_only",
+                "membership": "remote_only",
+                "network_access": "none",
+            },
             "material_store": material_store.capabilities(),
         }
 
@@ -651,6 +662,26 @@ def create_server(
             ),
             "resource_handling": animation_resource_handling(),
         }
+
+    @server.tool(structured_output=False, name="jianying_user")
+    @tool
+    def jianying_user(
+        mask_uid: bool = False,
+        include_paths: bool = True,
+    ) -> dict[str, Any]:
+        """Read the local Jianying account profile without network or writes.
+
+        Returns the account id the client stores locally, the login platform,
+        client build, preferences and draft counts. The display name, avatar and
+        membership come from Jianying's servers and are reported as unavailable.
+        """
+        return user_info.read(mask_uid=mask_uid, include_paths=include_paths)
+
+    @server.tool(structured_output=False, name="jianying_user_status")
+    @tool
+    def jianying_user_status() -> dict[str, Any]:
+        """Report whether a local Jianying user data directory was found."""
+        return user_info.status()
 
     @server.tool(structured_output=False, name="get_draft_box_status")
     @tool

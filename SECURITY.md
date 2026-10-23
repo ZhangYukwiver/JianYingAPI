@@ -18,6 +18,12 @@ CLI 只接受回环地址。HTTP 另外校验本地 Host、浏览器 Origin 和 
 
 所有权标记是防误写边界，不是防本机恶意进程伪造的密码学证明。不要手动给其他草稿补写标记以绕过限制。
 
+## 本机用户画像
+
+`GET /api/jianying/user` 读取剪映已写在本机的设置文件与草稿索引，属于个人信息：响应里有账号标识、登录平台、本机路径、草稿数量。它不联网、不写入、不解密凭据库，也不读取剪映的 token 或会话数据；昵称、头像、会员态不在本地，接口不会编造。
+
+对外提供响应前用 `mask_uid=true` 与 `include_paths=false`，或至少对 `account.uid`、`user_data_root`、`preferences` 中的路径脱敏。`uid_confidence` 为 `single_source` 时不要把它当作确定的账号归属。
+
 ## 仓库发布
 
 提交前检查 `git diff --cached` 和暂存文件列表，确认不包含 API Key、token、密码、私钥、账号会话、用户目录、真实草稿、媒体、日志或运行状态。`.gitignore` 只是辅助，已经被 Git 跟踪的文件不会因为新增忽略规则而自动移除。

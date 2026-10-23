@@ -44,6 +44,7 @@ from .models import (
     TransitionCreate,
 )
 from .service import ProjectService
+from .user_info import JianyingUserReader
 
 
 OK = {"ok": True}
@@ -112,6 +113,7 @@ def create_app(
     settings: Settings | None = None,
     material_store: MaterialStoreService | None = None,
     draft_box: DraftBoxService | None = None,
+    user_info: JianyingUserReader | None = None,
     emit_deprecation_warnings: bool = False,
 ) -> FastAPI:
     settings = settings or Settings.from_env()
@@ -126,6 +128,7 @@ def create_app(
     app.state.settings = settings
     app.state.material_store = material_store or MaterialStoreService()
     app.state.draft_box = draft_box or DraftBoxService()
+    app.state.user_info = user_info or JianyingUserReader()
     app.add_middleware(LocalRequestMiddleware)
 
     @app.exception_handler(ServiceError)
@@ -585,6 +588,14 @@ def create_app(
                 "timeline_content": "unsupported_encrypted",
             },
             "export": export_status(),
+            "jianying_user": {
+                "read": "available",
+                "local_sources": "settings_and_draft_index",
+                "nickname": "remote_only",
+                "avatar": "remote_only",
+                "membership": "remote_only",
+                "network_access": "none",
+            },
             "material_store": app.state.material_store.capabilities(),
         }
 
@@ -616,6 +627,19 @@ def create_app(
             ),
             "resource_handling": animation_resource_handling(),
         }
+
+    @app.get("/api/jianying/user", operation_id="jianying_user")
+    def jianying_user(
+        mask_uid: bool = False,
+        include_paths: bool = True,
+    ) -> dict[str, Any]:
+        return app.state.user_info.read(
+            mask_uid=mask_uid, include_paths=include_paths
+        )
+
+    @app.get("/api/jianying/user/status", operation_id="jianying_user_status")
+    def jianying_user_status() -> dict[str, Any]:
+        return app.state.user_info.status()
 
     @app.get("/api/draft-box/status", operation_id="get_draft_box_status")
     def get_draft_box_status() -> dict[str, Any]:
